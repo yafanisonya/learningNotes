@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>指令 Directive | Learning Notes</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/learningNotes/favicon.ico">
+    <meta name="description" content="Keep Learning, Keep Growing, Keep Succeeding">
+    <link rel="preload" href="/learningNotes/assets/css/0.styles.12d3ff79.css" as="style"><link rel="preload" href="/learningNotes/assets/js/app.fda5b0ab.js" as="script"><link rel="preload" href="/learningNotes/assets/js/2.8795140b.js" as="script"><link rel="preload" href="/learningNotes/assets/js/26.a1e5b74c.js" as="script"><link rel="prefetch" href="/learningNotes/assets/js/10.1e310ae4.js"><link rel="prefetch" href="/learningNotes/assets/js/11.9b19a07e.js"><link rel="prefetch" href="/learningNotes/assets/js/12.c838d67b.js"><link rel="prefetch" href="/learningNotes/assets/js/13.381a0216.js"><link rel="prefetch" href="/learningNotes/assets/js/14.fba6f027.js"><link rel="prefetch" href="/learningNotes/assets/js/15.1c45a95e.js"><link rel="prefetch" href="/learningNotes/assets/js/16.1d219538.js"><link rel="prefetch" href="/learningNotes/assets/js/17.d688009c.js"><link rel="prefetch" href="/learningNotes/assets/js/18.3ba198da.js"><link rel="prefetch" href="/learningNotes/assets/js/19.76783276.js"><link rel="prefetch" href="/learningNotes/assets/js/20.4957a2e2.js"><link rel="prefetch" href="/learningNotes/assets/js/21.080dd316.js"><link rel="prefetch" href="/learningNotes/assets/js/22.c7797c05.js"><link rel="prefetch" href="/learningNotes/assets/js/23.d3fdce57.js"><link rel="prefetch" href="/learningNotes/assets/js/24.abfd7ea1.js"><link rel="prefetch" href="/learningNotes/assets/js/25.f2cf88e3.js"><link rel="prefetch" href="/learningNotes/assets/js/27.bce472b8.js"><link rel="prefetch" href="/learningNotes/assets/js/28.ba6d9401.js"><link rel="prefetch" href="/learningNotes/assets/js/29.813388af.js"><link rel="prefetch" href="/learningNotes/assets/js/3.4b6ff1e5.js"><link rel="prefetch" href="/learningNotes/assets/js/30.5b313922.js"><link rel="prefetch" href="/learningNotes/assets/js/31.b2beafa1.js"><link rel="prefetch" href="/learningNotes/assets/js/32.6bec7c08.js"><link rel="prefetch" href="/learningNotes/assets/js/33.febc993b.js"><link rel="prefetch" href="/learningNotes/assets/js/34.6511e4de.js"><link rel="prefetch" href="/learningNotes/assets/js/35.a98f3ae3.js"><link rel="prefetch" href="/learningNotes/assets/js/36.7c14d960.js"><link rel="prefetch" href="/learningNotes/assets/js/37.391e7f03.js"><link rel="prefetch" href="/learningNotes/assets/js/38.7d0833c6.js"><link rel="prefetch" href="/learningNotes/assets/js/39.42ee6d63.js"><link rel="prefetch" href="/learningNotes/assets/js/4.3517de2a.js"><link rel="prefetch" href="/learningNotes/assets/js/40.454b7b2b.js"><link rel="prefetch" href="/learningNotes/assets/js/41.1030c50f.js"><link rel="prefetch" href="/learningNotes/assets/js/42.053e784b.js"><link rel="prefetch" href="/learningNotes/assets/js/43.7b9e7ebd.js"><link rel="prefetch" href="/learningNotes/assets/js/44.a4077cfe.js"><link rel="prefetch" href="/learningNotes/assets/js/45.9871b7d5.js"><link rel="prefetch" href="/learningNotes/assets/js/46.dc8741f0.js"><link rel="prefetch" href="/learningNotes/assets/js/47.8616dc07.js"><link rel="prefetch" href="/learningNotes/assets/js/48.19609aa3.js"><link rel="prefetch" href="/learningNotes/assets/js/49.00af8837.js"><link rel="prefetch" href="/learningNotes/assets/js/5.d8e4db26.js"><link rel="prefetch" href="/learningNotes/assets/js/50.55e9f893.js"><link rel="prefetch" href="/learningNotes/assets/js/51.643f5d5b.js"><link rel="prefetch" href="/learningNotes/assets/js/52.34ae848c.js"><link rel="prefetch" href="/learningNotes/assets/js/53.3f416545.js"><link rel="prefetch" href="/learningNotes/assets/js/54.84acf50a.js"><link rel="prefetch" href="/learningNotes/assets/js/55.00c96a68.js"><link rel="prefetch" href="/learningNotes/assets/js/56.0e5940bf.js"><link rel="prefetch" href="/learningNotes/assets/js/57.a1958548.js"><link rel="prefetch" href="/learningNotes/assets/js/58.36bb823d.js"><link rel="prefetch" href="/learningNotes/assets/js/59.4954a3c8.js"><link rel="prefetch" href="/learningNotes/assets/js/6.0672d94d.js"><link rel="prefetch" href="/learningNotes/assets/js/60.14640f51.js"><link rel="prefetch" href="/learningNotes/assets/js/61.0312f266.js"><link rel="prefetch" href="/learningNotes/assets/js/62.7697078f.js"><link rel="prefetch" href="/learningNotes/assets/js/63.f897d9d2.js"><link rel="prefetch" href="/learningNotes/assets/js/64.e9fd6c82.js"><link rel="prefetch" href="/learningNotes/assets/js/65.fb786054.js"><link rel="prefetch" href="/learningNotes/assets/js/66.3989266a.js"><link rel="prefetch" href="/learningNotes/assets/js/67.67933591.js"><link rel="prefetch" href="/learningNotes/assets/js/68.f2a39cc9.js"><link rel="prefetch" href="/learningNotes/assets/js/69.9ce7e4b3.js"><link rel="prefetch" href="/learningNotes/assets/js/7.54547a7f.js"><link rel="prefetch" href="/learningNotes/assets/js/70.777a5d57.js"><link rel="prefetch" href="/learningNotes/assets/js/71.8e6e4fea.js"><link rel="prefetch" href="/learningNotes/assets/js/72.f50a2759.js"><link rel="prefetch" href="/learningNotes/assets/js/73.722e119b.js"><link rel="prefetch" href="/learningNotes/assets/js/8.469ab190.js"><link rel="prefetch" href="/learningNotes/assets/js/9.00cf94d6.js">
+    <link rel="stylesheet" href="/learningNotes/assets/css/0.styles.12d3ff79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learningNotes/" class="home-link router-link-active"><img src="/learningNotes/images.jpg" alt="Learning Notes" class="logo"> <span class="site-name can-hide">Learning Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Home</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/learningNotes/Vue/note1.html" class="sidebar-link">使用@vue/cli搭建项目</a></li><li><a href="/learningNotes/Vue/note2.html" class="sidebar-link">Vue 版本区别</a></li><li><a href="/learningNotes/Vue/note3.html" class="sidebar-link">Vue 构造选项</a></li><li><a href="/learningNotes/Vue/note4.html" class="sidebar-link">Vue 数据响应式</a></li><li><a href="/learningNotes/Vue/note5.html" class="sidebar-link">Vue computed、watch</a></li><li><a href="/learningNotes/Vue/note6.html" class="sidebar-link">模板 template</a></li><li><a href="/learningNotes/Vue/note7.html" aria-current="page" class="active sidebar-link">指令 Directive</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/learningNotes/Vue/note8.html" class="sidebar-link">mixins 混入</a></li><li><a href="/learningNotes/Vue/note9.html" class="sidebar-link">Vuex</a></li><li><a href="/learningNotes/Vue/notex.html" class="sidebar-link">Vue动画</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Browser</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>极简记账项目笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他项目笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="指令-directive"><a href="#指令-directive" class="header-anchor">#</a> 指令 Directive</h4> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>x<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-html</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>x<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>以 v- 开头的东西就是指令</p> <ul><li>语法</li></ul> <blockquote><p>v-指令名：参数 = 值 ， 如 <code>v-on: click=add</code></p></blockquote> <blockquote><p>如果值里没有特殊字符，则可以不加引号；
+有些指令没有参数和值， 如 <code>v-pre</code>；
+有些指令没有值，如<code>v-on:click.prevent</code>；</p></blockquote> <h4 id="自定义指令"><a href="#自定义指令" class="header-anchor">#</a> 自定义指令</h4> <blockquote><p>声明一个全局指令</p></blockquote> <p><code>Vue.directive('x',directiveOptions)</code></p> <blockquote><p>声明一个局部指令</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>new Vue({
+  ...,
+  directives:{ &quot;x&quot; : directiveOptions }
+})
+</code></pre></div><p><code>directiveOptions</code>五个函数属性：</p> <ul><li><code>bind(el,info,vnode,oldVnode)</code>  类似created</li> <li><code>inserted(el,info,vnode,oldVnode)</code> 类似mounted</li> <li><code>update(el,info,vnode,oldVnode)</code> 类似updated</li> <li><code>componentUpdated(el,info,vnode,oldVnode)</code></li> <li><code>unbind(el,info,vnode,oldVnode)</code> 类似destroyed</li></ul> <h5 id="指令的作用："><a href="#指令的作用：" class="header-anchor">#</a> 指令的作用：</h5> <ul><li>主要用于DOM操作(<code>Vue</code>实例/组件用于数据绑定、事件监听、<code>DOM</code>更新，<code>Vue</code>指令用于<code>DOM</code>操作)</li> <li>减少重复</li></ul> <div class="language-vue extra-class"><pre class="language-vue"><code>new Vue({
+  directives: {
+    on2: {
+      // bind 可以改为 inserted
+      bind(el, info) {
+        el.addEventListener(info.arg, info.value);
+        // Vue 自带的 v-on 并不是这样实现的，它更复杂，用了事件委托
+      },
+      unbind(el, info) {
+        el.removeEventListener(info.arg, info.value);
+      }
+    }
+  },
+  template: `
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token namespace">v-on2:</span>click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hi<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>点我<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  `,
+  methods: {
+    hi() {
+      console.log(&quot;hi&quot;);
+    }
+  }
+}).$mount(&quot;#app&quot;);
+</code></pre></div><h3 id="修饰符"><a href="#修饰符" class="header-anchor">#</a> 修饰符</h3> <div class="language-vue extra-class"><pre class="language-vue"><code>@click.stop = &quot;add&quot; 表示阻止事件传播/冒泡
+@click.prevent = &quot;add&quot; 表示阻止默认动作
+@click.stop.prevent = &quot;add&quot; 同时表示两种意思
+</code></pre></div><p>v-on支持的修饰符：</p> <div class="language- extra-class"><pre class="language-text"><code>.stop .prevent
+.{keycode | keyAlias}  .capture .self .once .passive .native
+快捷键相关 .ctrl .alt .shift .meta .exact
+鼠标相关 .left .right .middle
+</code></pre></div><p>v-bind 支持的修饰符：</p> <div class="language- extra-class"><pre class="language-text"><code>.sync .prop .camel 
+</code></pre></div><p>v-model 支持的修饰符:
+<code>.lazy .number .trim</code></p> <div class="language- extra-class"><pre class="language-text"><code>.lazy
+在默认情况下，v-model 在每次 input 事件触发后将输入框的值与数据进行同步 (除了上述输入法组合文字时)。你可以添加 lazy 修饰符，从而转为在 change 事件_之后_进行同步：
+
+&lt;!-- 在“change”时而非“input”时更新 --&gt;
+&lt;input v-model.lazy=&quot;msg&quot;&gt;
+
+
+.number
+如果想自动将用户的输入值转为数值类型，可以给 v-model 添加 number 修饰符：
+
+&lt;input v-model.number=&quot;age&quot; type=&quot;number&quot;&gt;
+这通常很有用，因为即使在 type=&quot;number&quot; 时，HTML 输入元素的值也总会返回字符串。如果这个值无法被 parseFloat() 解析，则会返回原始的值。
+
+.trim
+如果要自动过滤用户输入的首尾空白字符，可以给 v-model 添加 trim 修饰符：
+&lt;input v-model.trim=&quot;msg&quot;&gt;
+</code></pre></div><h3 id="sync-修饰符"><a href="#sync-修饰符" class="header-anchor">#</a> .sync 修饰符</h3> <blockquote><p>组件不能修改 props 外部数据
+$emit 可以触发事件，并传参
+$event 可以获取$emit的参数</p></blockquote> <blockquote><p>.sync功能：当一个子组件改变了一个 prop 的值时，这个变化也会同步到父组件中；使用<code>update:myPropName</code> 模式触发事件，实现双向绑定</p></blockquote> <p><a href="https://codesandbox.io/s/small-leftpad-zzvpp" target="_blank" rel="noopener noreferrer">代码示例<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- extra-class"><pre class="language-text"><code>//父组件代码
+&lt;template&gt;
+  &lt;div class=&quot;app&quot;&gt;
+    App.vue 我现在有 {{total}}
+    &lt;hr&gt;
+    &lt;Child :money=&quot;total&quot; v-on:update:money=&quot;total = $event&quot;/&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import Child from &quot;./Child.vue&quot;;
+export default {
+  data() {
+    return { total: 10000 };
+  },
+  components: { Child: Child }
+};
+&lt;/script&gt;
+
+&lt;style&gt;
+&lt;/style&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>//子组件代码
+&lt;template&gt;
+  &lt;div class=&quot;child&quot;&gt;
+    {{money}}
+    &lt;button @click=&quot;$emit('update:money', money-100)&quot;&gt;
+      &lt;span&gt;花钱&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  props: [&quot;money&quot;]
+};
+&lt;/script&gt;
+
+&lt;style&gt;
+&lt;/style&gt;
+</code></pre></div><p>在一个包含money prop 的假设的组件中，通过以下方式赋予新值：</p> <div class="language- extra-class"><pre class="language-text"><code>$emit('update:money', money-100)
+// this.$emit 可以触发事件，并传参
+</code></pre></div><p>然后父组件可以监听事件并根据需要更新一个本地的数据属性</p> <div class="language- extra-class"><pre class="language-text"><code> &lt;Child :money=&quot;total&quot; v-on:update:money=&quot;total = $event&quot;/&gt;
+// $event 可以获取$emit的参数
+ &lt;Child :money=&quot;total&quot; @update:money=&quot;total = $event&quot;/&gt;
+</code></pre></div><p>为了方便起见，这种模式可以缩写，即 .sync 修饰符：</p> <div class="language- extra-class"><pre class="language-text"><code> &lt;Child :money.sync=&quot;total&quot;/&gt;
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/learningNotes/Vue/note6.html" class="prev">
+        模板 template
+      </a></span> <span class="next"><a href="/learningNotes/Vue/note8.html">
+        mixins 混入
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/learningNotes/assets/js/app.fda5b0ab.js" defer></script><script src="/learningNotes/assets/js/2.8795140b.js" defer></script><script src="/learningNotes/assets/js/26.a1e5b74c.js" defer></script>
+  </body>
+</html>

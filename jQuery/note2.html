@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>jQuery常用方法 | Learning Notes</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/learningNotes/favicon.ico">
+    <meta name="description" content="Keep Learning, Keep Growing, Keep Succeeding">
+    <link rel="preload" href="/learningNotes/assets/css/0.styles.12d3ff79.css" as="style"><link rel="preload" href="/learningNotes/assets/js/app.fda5b0ab.js" as="script"><link rel="preload" href="/learningNotes/assets/js/2.8795140b.js" as="script"><link rel="preload" href="/learningNotes/assets/js/44.a4077cfe.js" as="script"><link rel="prefetch" href="/learningNotes/assets/js/10.1e310ae4.js"><link rel="prefetch" href="/learningNotes/assets/js/11.9b19a07e.js"><link rel="prefetch" href="/learningNotes/assets/js/12.c838d67b.js"><link rel="prefetch" href="/learningNotes/assets/js/13.381a0216.js"><link rel="prefetch" href="/learningNotes/assets/js/14.fba6f027.js"><link rel="prefetch" href="/learningNotes/assets/js/15.1c45a95e.js"><link rel="prefetch" href="/learningNotes/assets/js/16.1d219538.js"><link rel="prefetch" href="/learningNotes/assets/js/17.d688009c.js"><link rel="prefetch" href="/learningNotes/assets/js/18.3ba198da.js"><link rel="prefetch" href="/learningNotes/assets/js/19.76783276.js"><link rel="prefetch" href="/learningNotes/assets/js/20.4957a2e2.js"><link rel="prefetch" href="/learningNotes/assets/js/21.080dd316.js"><link rel="prefetch" href="/learningNotes/assets/js/22.c7797c05.js"><link rel="prefetch" href="/learningNotes/assets/js/23.d3fdce57.js"><link rel="prefetch" href="/learningNotes/assets/js/24.abfd7ea1.js"><link rel="prefetch" href="/learningNotes/assets/js/25.f2cf88e3.js"><link rel="prefetch" href="/learningNotes/assets/js/26.a1e5b74c.js"><link rel="prefetch" href="/learningNotes/assets/js/27.bce472b8.js"><link rel="prefetch" href="/learningNotes/assets/js/28.ba6d9401.js"><link rel="prefetch" href="/learningNotes/assets/js/29.813388af.js"><link rel="prefetch" href="/learningNotes/assets/js/3.4b6ff1e5.js"><link rel="prefetch" href="/learningNotes/assets/js/30.5b313922.js"><link rel="prefetch" href="/learningNotes/assets/js/31.b2beafa1.js"><link rel="prefetch" href="/learningNotes/assets/js/32.6bec7c08.js"><link rel="prefetch" href="/learningNotes/assets/js/33.febc993b.js"><link rel="prefetch" href="/learningNotes/assets/js/34.6511e4de.js"><link rel="prefetch" href="/learningNotes/assets/js/35.a98f3ae3.js"><link rel="prefetch" href="/learningNotes/assets/js/36.7c14d960.js"><link rel="prefetch" href="/learningNotes/assets/js/37.391e7f03.js"><link rel="prefetch" href="/learningNotes/assets/js/38.7d0833c6.js"><link rel="prefetch" href="/learningNotes/assets/js/39.42ee6d63.js"><link rel="prefetch" href="/learningNotes/assets/js/4.3517de2a.js"><link rel="prefetch" href="/learningNotes/assets/js/40.454b7b2b.js"><link rel="prefetch" href="/learningNotes/assets/js/41.1030c50f.js"><link rel="prefetch" href="/learningNotes/assets/js/42.053e784b.js"><link rel="prefetch" href="/learningNotes/assets/js/43.7b9e7ebd.js"><link rel="prefetch" href="/learningNotes/assets/js/45.9871b7d5.js"><link rel="prefetch" href="/learningNotes/assets/js/46.dc8741f0.js"><link rel="prefetch" href="/learningNotes/assets/js/47.8616dc07.js"><link rel="prefetch" href="/learningNotes/assets/js/48.19609aa3.js"><link rel="prefetch" href="/learningNotes/assets/js/49.00af8837.js"><link rel="prefetch" href="/learningNotes/assets/js/5.d8e4db26.js"><link rel="prefetch" href="/learningNotes/assets/js/50.55e9f893.js"><link rel="prefetch" href="/learningNotes/assets/js/51.643f5d5b.js"><link rel="prefetch" href="/learningNotes/assets/js/52.34ae848c.js"><link rel="prefetch" href="/learningNotes/assets/js/53.3f416545.js"><link rel="prefetch" href="/learningNotes/assets/js/54.84acf50a.js"><link rel="prefetch" href="/learningNotes/assets/js/55.00c96a68.js"><link rel="prefetch" href="/learningNotes/assets/js/56.0e5940bf.js"><link rel="prefetch" href="/learningNotes/assets/js/57.a1958548.js"><link rel="prefetch" href="/learningNotes/assets/js/58.36bb823d.js"><link rel="prefetch" href="/learningNotes/assets/js/59.4954a3c8.js"><link rel="prefetch" href="/learningNotes/assets/js/6.0672d94d.js"><link rel="prefetch" href="/learningNotes/assets/js/60.14640f51.js"><link rel="prefetch" href="/learningNotes/assets/js/61.0312f266.js"><link rel="prefetch" href="/learningNotes/assets/js/62.7697078f.js"><link rel="prefetch" href="/learningNotes/assets/js/63.f897d9d2.js"><link rel="prefetch" href="/learningNotes/assets/js/64.e9fd6c82.js"><link rel="prefetch" href="/learningNotes/assets/js/65.fb786054.js"><link rel="prefetch" href="/learningNotes/assets/js/66.3989266a.js"><link rel="prefetch" href="/learningNotes/assets/js/67.67933591.js"><link rel="prefetch" href="/learningNotes/assets/js/68.f2a39cc9.js"><link rel="prefetch" href="/learningNotes/assets/js/69.9ce7e4b3.js"><link rel="prefetch" href="/learningNotes/assets/js/7.54547a7f.js"><link rel="prefetch" href="/learningNotes/assets/js/70.777a5d57.js"><link rel="prefetch" href="/learningNotes/assets/js/71.8e6e4fea.js"><link rel="prefetch" href="/learningNotes/assets/js/72.f50a2759.js"><link rel="prefetch" href="/learningNotes/assets/js/73.722e119b.js"><link rel="prefetch" href="/learningNotes/assets/js/8.469ab190.js"><link rel="prefetch" href="/learningNotes/assets/js/9.00cf94d6.js">
+    <link rel="stylesheet" href="/learningNotes/assets/css/0.styles.12d3ff79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learningNotes/" class="home-link router-link-active"><img src="/learningNotes/images.jpg" alt="Learning Notes" class="logo"> <span class="site-name can-hide">Learning Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Home</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>jQuery</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/learningNotes/jQuery/note0.html" class="sidebar-link">jQuery基础</a></li><li><a href="/learningNotes/jQuery/note1.html" class="sidebar-link">jQuery选择器</a></li><li><a href="/learningNotes/jQuery/note2.html" aria-current="page" class="active sidebar-link">jQuery常用方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/learningNotes/jQuery/note2.html#删除元素" class="sidebar-link">删除元素</a></li><li class="sidebar-sub-header"><a href="/learningNotes/jQuery/note2.html#html-string" class="sidebar-link">html([string])</a></li><li class="sidebar-sub-header"><a href="/learningNotes/jQuery/note2.html#text-string" class="sidebar-link">text([string])</a></li><li class="sidebar-sub-header"><a href="/learningNotes/jQuery/note2.html#包裹元素" class="sidebar-link">包裹元素</a></li></ul></li><li><a href="/learningNotes/jQuery/note3.html" class="sidebar-link">jQuery属性&amp;CSS操作</a></li><li><a href="/learningNotes/jQuery/note4.html" class="sidebar-link">jQuery动画相关函数</a></li><li><a href="/learningNotes/jQuery/note5.html" class="sidebar-link">jQuery Ajax</a></li><li><a href="/learningNotes/jQuery/note6.html" class="sidebar-link">jQuery绑定事件与事件代理</a></li><li><a href="/learningNotes/jQuery/note7.html" class="sidebar-link">jQuery懒加载</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Browser</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>极简记账项目笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他项目笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="jquery常用方法"><a href="#jquery常用方法" class="header-anchor">#</a> jQuery常用方法</h3> <blockquote><p>下述方法均基于以下代码</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;mod-tab&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+      &lt;div class=&quot;tab &quot;&gt;1&lt;/div&gt;
+      &lt;div class=&quot;tab active&quot;&gt;2&lt;/div&gt;
+      &lt;div class=&quot;tab&quot;&gt;3&lt;/div&gt;
+      &lt;div class=&quot;tab&quot;&gt;4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;content&quot;&gt;
+      &lt;div class=&quot;panel &quot;&gt;panel1&lt;/div&gt;
+      &lt;div class=&quot;panel active&quot;&gt;panel2&lt;/div&gt;
+      &lt;div class=&quot;panel&quot;&gt;panel3&lt;/div&gt;
+      &lt;div class=&quot;panel&quot;&gt;panel4&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><p>##添加元素</p> <h3 id="_1-append"><a href="#_1-append" class="header-anchor">#</a> 1 .append()</h3> <ul><li><code>.append(content[,content])</code></li> <li><code>.append(function(index,html))</code></li></ul> <blockquote><p>可以一次添加多个内容，内容可以是DOM对象、HTML string、 jQuery对象
+如果参数是function，function可以返回DOM对象、HTML string、 jQuery对象，参数是集合中的元素位置与原来的html值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;.panel.active&quot; ).append( &quot;&lt;p&gt;Test&lt;/p&gt;&quot; );    //添加p标签
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-06d487d00751804c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="HTML string"></p> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;p&quot; ).append( document.createTextNode( &quot;Hello&quot; ) );      //p标签添加DOM对象]
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-99467b7319a06a42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DOM对象"></p> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;.tab.active&quot; ).append( $( &quot;p&quot; ) );   //添加jQuery对象
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-1f0f767dbd2f4e77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jQuery对象"></p> <blockquote><p>注意：通常我们将页面上一个元素插入到DOM里另一个地方，它会被从老地方移走，类似剪切的效果；   p标签从.panel.active 移动到.tab.active
+#####2 .appendTo()
+把对象插入到目标元素尾部，目标元素可以是selector, DOM对象, HTML string, 元素集合, jQuery对象;</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;p&quot; ).appendTo( $(&quot;.header&quot;) ); //p插入到.header尾部
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-15504007906e63bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jQuery对象"></p> <h3 id="_2-prepend"><a href="#_2-prepend" class="header-anchor">#</a> 2 .prepend()</h3> <ul><li><code>.prepend(content[,content])</code></li> <li><code>.prepend(function(index,html))</code></li></ul> <blockquote><p>向对象头部追加内容</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;.header&quot; ).prepend( $(&quot;p&quot;) ); ; //p追加到.header头部
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-8019f40cc4477808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="prepend"></p> <h3 id="_3-prependto-target"><a href="#_3-prependto-target" class="header-anchor">#</a> 3.prependTo(target)</h3> <blockquote><p>把对象插入到目标元素头部</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;p&quot; ).prependTo( $(&quot;.header&quot;) )
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-94c5fb6446b5e43b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="prependTo"></p> <blockquote><p>注意两者区别:
+peepend: $(A).prepend( B )  将B追加到A的头部
+prependTo:$(A).prepend( B )  将A插入到B的头部</p></blockquote> <h3 id="_4-before"><a href="#_4-before" class="header-anchor">#</a> 4 .before()</h3> <ul><li><code>.before([content][,content])</code></li> <li><code>.before(function)</code></li></ul> <blockquote><p>在对象前面(不是头部，而是外面，和对象并列同级)插入内容</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;.panel.active&quot; ).before( &quot;&lt;p&gt;TestHello&lt;/p&gt;&quot; );
+</code></pre></div><h3 id="_5-insertbefore-target"><a href="#_5-insertbefore-target" class="header-anchor">#</a> 5.insertBefore(target)</h3> <blockquote><p>把对象插入到target之前（同样不是头部，是同级）</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;&lt;p&gt;TestHello&lt;/p&gt;&quot; ).insertBefore( $(&quot;.panel.active&quot; ));
+</code></pre></div><h3 id="_6-after"><a href="#_6-after" class="header-anchor">#</a> 6 .after()</h3> <p><code>.after([content][,content])</code> <code>.after(function（index）)</code>
+和before相反，在对象后面(不是尾部，而是外面，和对象并列同级)插入内容</p> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;.panel.active&quot; ).after( &quot;&lt;p&gt;TestHello&lt;/p&gt;&quot; );
+</code></pre></div><h3 id="_7-insertafter"><a href="#_7-insertafter" class="header-anchor">#</a> 7 .insertAfter()</h3> <blockquote><p>和insertBefore相反，把对象插入到target之后（同样不是尾部，是同级）</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;&lt;p&gt;TestHello&lt;/p&gt;&quot; ).insertAfter( $(&quot;.panel.active&quot; ));
+</code></pre></div><h2 id="删除元素"><a href="#删除元素" class="header-anchor">#</a> 删除元素</h2> <h3 id="remove-selector"><a href="#remove-selector" class="header-anchor">#</a> .remove([selector])</h3> <blockquote><p>删除被选元素（及其子元素）</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;.header&quot; ).remove();           //移除全部
+$('div').remove('.tab.active');    //移除指定元素
+</code></pre></div><h3 id="empty"><a href="#empty" class="header-anchor">#</a> .empty()</h3> <blockquote><p>清空被选择元素内所有子元素</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$('.content').empty();
+</code></pre></div><h2 id="html-string"><a href="#html-string" class="header-anchor">#</a> html([string])</h2> <blockquote><p>读写两用的方法，用于获取/修改元素的innerHTML
+- 当没有传递参数的时候，返回元素的innerHTML
+-  当传递了一个string参数的时候，修改元素的innerHTML为参数值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$('.header').html();
+&quot;
+      &lt;div class=&quot;tab &quot;&gt;1&lt;/div&gt;
+      &lt;div class=&quot;tab active&quot;&gt;2&lt;/div&gt;
+      &lt;div class=&quot;tab&quot;&gt;3&lt;/div&gt;
+      &lt;div class=&quot;tab&quot;&gt;4&lt;/div&gt;
+    &quot;
+$('.header').html('&lt;p&gt;hh&lt;/p&gt;');
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-d9cf81cd5ac042e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="html"></p> <h2 id="text-string"><a href="#text-string" class="header-anchor">#</a> text([string])</h2> <blockquote><p>操作的是DOM的innerText值
+- 当没有传递参数的时候，返回元素的innerText
+-  当传递了一个string参数的时候，修改元素的innerText为参数值</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$('.tab.active').text();
+$('.tab.active').text(4);
+</code></pre></div><h2 id="包裹元素"><a href="#包裹元素" class="header-anchor">#</a> 包裹元素</h2> <h4 id="wrap-wrappingelement-wrap-function-index"><a href="#wrap-wrappingelement-wrap-function-index" class="header-anchor">#</a> wrap(wrappingElement) / .wrap(function(index))</h4> <blockquote><p>为每个对象包裹一层HTML结构，可以是selector, element, HTML string, jQuery object</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;inner&quot;&gt;Hello&lt;/div&gt;
+  &lt;div class=&quot;inner&quot;&gt;Goodbye&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p><code>$( &quot;.inner&quot; ).wrap( &quot;&lt;div class='new'&gt;&lt;/div&gt;&quot; );</code>
+结果</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;new&quot;&gt;
+    &lt;div class=&quot;inner&quot;&gt;Hello&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;new&quot;&gt;
+    &lt;div class=&quot;inner&quot;&gt;Goodbye&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><h4 id="wrapall-wrappingelement"><a href="#wrapall-wrappingelement" class="header-anchor">#</a> .wrapAll(wrappingElement)</h4> <blockquote><p>把所有匹配对象包裹在同一个HTML结构中</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;inner&quot;&gt;Hello&lt;/div&gt;
+  &lt;div class=&quot;inner&quot;&gt;Goodbye&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p><code>$( &quot;.inner&quot; ).wrapAll( &quot;&lt;div class='new' /&gt;&quot;);</code>
+结果</p> <div class="language- extra-class"><pre class="language-text"><code>    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;new&quot;&gt;
+        &lt;div class=&quot;inner&quot;&gt;Hello&lt;/div&gt;
+        &lt;div class=&quot;inner&quot;&gt;Goodbye&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre></div><h4 id="wrapinner-wrappingelement-wrapinner-function-index"><a href="#wrapinner-wrappingelement-wrapinner-function-index" class="header-anchor">#</a> .wrapInner(wrappingElement) / .wrapInner(function(index))</h4> <blockquote><p>包裹匹配元素内容</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;inner&quot;&gt;Hello&lt;/div&gt;
+  &lt;div class=&quot;inner&quot;&gt;Goodbye&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p><code>$( &quot;.inner&quot; ).wrapInner( &quot;&lt;div class='new'&gt;&lt;/div&gt;&quot;);</code>
+执行结果</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;inner&quot;&gt;
+    &lt;div class=&quot;new&quot;&gt;Hello&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;inner&quot;&gt;
+    &lt;div class=&quot;new&quot;&gt;Goodbye&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><h4 id="unwrap"><a href="#unwrap" class="header-anchor">#</a> .unwrap()</h4> <blockquote><p>把DOM元素的parent移除
+<code>pTags = $( &quot;p&quot; ).unwrap();</code></p></blockquote> <h4 id="each"><a href="#each" class="header-anchor">#</a> .each()</h4> <p><code>.each( function(index, Element) )</code></p> <blockquote><p>遍历一个jQuery对象，为每个匹配元素执行一个函数</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$( &quot;.content&quot; ).each(function( index ) {
+  console.log( index + &quot;:&quot; + $(this).text() );
+});
+</code></pre></div><h4 id="clone"><a href="#clone" class="header-anchor">#</a> .clone()</h4> <blockquote><p>.clone()方法深度复制所有匹配的元素集合，包括所有匹配元素、匹配元素的下级元素、文字节点</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$('.content').clone().appendTo('.header');
+</code></pre></div><h4 id="index-index-selector-index-element"><a href="#index-index-selector-index-element" class="header-anchor">#</a> .index() / .index(selector)/ .index(element)</h4> <p>从给定集合中查找特定元素index</p> <blockquote><p>没参数返回第一个元素index
+如果参数是DOM对象或者jQuery对象，则返回参数在集合中的index
+如果参数是选择器，返回第一个匹配元素index，没有找到返回-1</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>var listItem = $( &quot;#bar&quot; );
+ $( &quot;li&quot; ).index( listItem ) 
+</code></pre></div><h4 id="ready-handler"><a href="#ready-handler" class="header-anchor">#</a> .ready( handler )</h4> <blockquote><p>当DOM准备就绪时，指定一个函数来执行。
+虽然JavaScript提供了load事件，当页面呈现时用来执行这个事件，直到所有的东西，如图像已被完全接收前，此事件不会被触发。
+在大多数情况下，只要DOM结构已完全加载时，脚本就可以运行。传递处理函数给.ready()方法，能保证DOM准备好后就执行这个函数，因此，这里是进行所有其它事件绑定及运行其它 jQuery 代码的最佳地方。
+如果执行的代码需要在元素被加载之后才能使用时，（例如，取得图片的大小需要在图片被加载完后才能知道），就需要将这样的代码放到 load 事件中。</p></blockquote> <p>下面两种语法全部是等价的：</p> <div class="language- extra-class"><pre class="language-text"><code>$(document).ready(handler)
+$(handler)
+//我们经常这么使用
+$(function(){
+    console.log('ready');
+});
+</code></pre></div><h4 id="jquery-extend-deep-target-object1-objectn"><a href="#jquery-extend-deep-target-object1-objectn" class="header-anchor">#</a> jQuery.extend([deep,] target [, object1 ] [, objectN ] )</h4> <blockquote><p>当我们提供两个或多个对象给$.extend()，对象的所有属性都添加到目标对象（target参数）。</p></blockquote> <p>如果只有一个参数提供给$.extend()，这意味着目标参数被省略。在这种情况下，jQuery对象本身被默认为目标对象。
+目标对象（第一个参数）将被修改，并且将通过$.extend()返回。然而，如果我们想保留原对象，我们可以通过传递一个空对象作为目标对象：</p> <p><code>var object = $.extend({}, object1, object2);</code>
+在默认情况下，通过$.extend()合并操作不是递归的;</p> <p>如果第一个对象的属性本身是一个对象或数组，那么它将完全用第二个对象相同的key重写一个属性。这些值不会被合并。如果将 true作为该函数的第一个参数，那么会在对象上进行递归的合并。</p> <div class="language- extra-class"><pre class="language-text"><code>var object1 = {
+  apple: 0,
+  banana: { weight: 52, price: 100 },
+  cherry: 97
+};
+var object2 = {
+  banana: { price: 200 },
+  durian: 100
+};
+// Merge object2 into object1
+$.extend( object1, object2 );   
+//{apple: 0,banana: {price: 200},cherry: 97,durian: 100}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/learningNotes/jQuery/note1.html" class="prev">
+        jQuery选择器
+      </a></span> <span class="next"><a href="/learningNotes/jQuery/note3.html">
+        jQuery属性&amp;CSS操作
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/learningNotes/assets/js/app.fda5b0ab.js" defer></script><script src="/learningNotes/assets/js/2.8795140b.js" defer></script><script src="/learningNotes/assets/js/44.a4077cfe.js" defer></script>
+  </body>
+</html>

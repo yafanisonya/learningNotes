@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS数组 | Learning Notes</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/learningNotes/favicon.ico">
+    <meta name="description" content="Keep Learning, Keep Growing, Keep Succeeding">
+    <link rel="preload" href="/learningNotes/assets/css/0.styles.12d3ff79.css" as="style"><link rel="preload" href="/learningNotes/assets/js/app.fda5b0ab.js" as="script"><link rel="preload" href="/learningNotes/assets/js/2.8795140b.js" as="script"><link rel="preload" href="/learningNotes/assets/js/56.0e5940bf.js" as="script"><link rel="prefetch" href="/learningNotes/assets/js/10.1e310ae4.js"><link rel="prefetch" href="/learningNotes/assets/js/11.9b19a07e.js"><link rel="prefetch" href="/learningNotes/assets/js/12.c838d67b.js"><link rel="prefetch" href="/learningNotes/assets/js/13.381a0216.js"><link rel="prefetch" href="/learningNotes/assets/js/14.fba6f027.js"><link rel="prefetch" href="/learningNotes/assets/js/15.1c45a95e.js"><link rel="prefetch" href="/learningNotes/assets/js/16.1d219538.js"><link rel="prefetch" href="/learningNotes/assets/js/17.d688009c.js"><link rel="prefetch" href="/learningNotes/assets/js/18.3ba198da.js"><link rel="prefetch" href="/learningNotes/assets/js/19.76783276.js"><link rel="prefetch" href="/learningNotes/assets/js/20.4957a2e2.js"><link rel="prefetch" href="/learningNotes/assets/js/21.080dd316.js"><link rel="prefetch" href="/learningNotes/assets/js/22.c7797c05.js"><link rel="prefetch" href="/learningNotes/assets/js/23.d3fdce57.js"><link rel="prefetch" href="/learningNotes/assets/js/24.abfd7ea1.js"><link rel="prefetch" href="/learningNotes/assets/js/25.f2cf88e3.js"><link rel="prefetch" href="/learningNotes/assets/js/26.a1e5b74c.js"><link rel="prefetch" href="/learningNotes/assets/js/27.bce472b8.js"><link rel="prefetch" href="/learningNotes/assets/js/28.ba6d9401.js"><link rel="prefetch" href="/learningNotes/assets/js/29.813388af.js"><link rel="prefetch" href="/learningNotes/assets/js/3.4b6ff1e5.js"><link rel="prefetch" href="/learningNotes/assets/js/30.5b313922.js"><link rel="prefetch" href="/learningNotes/assets/js/31.b2beafa1.js"><link rel="prefetch" href="/learningNotes/assets/js/32.6bec7c08.js"><link rel="prefetch" href="/learningNotes/assets/js/33.febc993b.js"><link rel="prefetch" href="/learningNotes/assets/js/34.6511e4de.js"><link rel="prefetch" href="/learningNotes/assets/js/35.a98f3ae3.js"><link rel="prefetch" href="/learningNotes/assets/js/36.7c14d960.js"><link rel="prefetch" href="/learningNotes/assets/js/37.391e7f03.js"><link rel="prefetch" href="/learningNotes/assets/js/38.7d0833c6.js"><link rel="prefetch" href="/learningNotes/assets/js/39.42ee6d63.js"><link rel="prefetch" href="/learningNotes/assets/js/4.3517de2a.js"><link rel="prefetch" href="/learningNotes/assets/js/40.454b7b2b.js"><link rel="prefetch" href="/learningNotes/assets/js/41.1030c50f.js"><link rel="prefetch" href="/learningNotes/assets/js/42.053e784b.js"><link rel="prefetch" href="/learningNotes/assets/js/43.7b9e7ebd.js"><link rel="prefetch" href="/learningNotes/assets/js/44.a4077cfe.js"><link rel="prefetch" href="/learningNotes/assets/js/45.9871b7d5.js"><link rel="prefetch" href="/learningNotes/assets/js/46.dc8741f0.js"><link rel="prefetch" href="/learningNotes/assets/js/47.8616dc07.js"><link rel="prefetch" href="/learningNotes/assets/js/48.19609aa3.js"><link rel="prefetch" href="/learningNotes/assets/js/49.00af8837.js"><link rel="prefetch" href="/learningNotes/assets/js/5.d8e4db26.js"><link rel="prefetch" href="/learningNotes/assets/js/50.55e9f893.js"><link rel="prefetch" href="/learningNotes/assets/js/51.643f5d5b.js"><link rel="prefetch" href="/learningNotes/assets/js/52.34ae848c.js"><link rel="prefetch" href="/learningNotes/assets/js/53.3f416545.js"><link rel="prefetch" href="/learningNotes/assets/js/54.84acf50a.js"><link rel="prefetch" href="/learningNotes/assets/js/55.00c96a68.js"><link rel="prefetch" href="/learningNotes/assets/js/57.a1958548.js"><link rel="prefetch" href="/learningNotes/assets/js/58.36bb823d.js"><link rel="prefetch" href="/learningNotes/assets/js/59.4954a3c8.js"><link rel="prefetch" href="/learningNotes/assets/js/6.0672d94d.js"><link rel="prefetch" href="/learningNotes/assets/js/60.14640f51.js"><link rel="prefetch" href="/learningNotes/assets/js/61.0312f266.js"><link rel="prefetch" href="/learningNotes/assets/js/62.7697078f.js"><link rel="prefetch" href="/learningNotes/assets/js/63.f897d9d2.js"><link rel="prefetch" href="/learningNotes/assets/js/64.e9fd6c82.js"><link rel="prefetch" href="/learningNotes/assets/js/65.fb786054.js"><link rel="prefetch" href="/learningNotes/assets/js/66.3989266a.js"><link rel="prefetch" href="/learningNotes/assets/js/67.67933591.js"><link rel="prefetch" href="/learningNotes/assets/js/68.f2a39cc9.js"><link rel="prefetch" href="/learningNotes/assets/js/69.9ce7e4b3.js"><link rel="prefetch" href="/learningNotes/assets/js/7.54547a7f.js"><link rel="prefetch" href="/learningNotes/assets/js/70.777a5d57.js"><link rel="prefetch" href="/learningNotes/assets/js/71.8e6e4fea.js"><link rel="prefetch" href="/learningNotes/assets/js/72.f50a2759.js"><link rel="prefetch" href="/learningNotes/assets/js/73.722e119b.js"><link rel="prefetch" href="/learningNotes/assets/js/8.469ab190.js"><link rel="prefetch" href="/learningNotes/assets/js/9.00cf94d6.js">
+    <link rel="stylesheet" href="/learningNotes/assets/css/0.styles.12d3ff79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learningNotes/" class="home-link router-link-active"><img src="/learningNotes/images.jpg" alt="Learning Notes" class="logo"> <span class="site-name can-hide">Learning Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Home</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/learningNotes/js/note0.html" class="sidebar-link">JS基本语法</a></li><li><a href="/learningNotes/js/note1.html" class="sidebar-link">JS数据类型</a></li><li><a href="/learningNotes/js/note2.html" class="sidebar-link">JS对象基本语法</a></li><li><a href="/learningNotes/js/note3.html" class="sidebar-link">JS原型、原型链</a></li><li><a href="/learningNotes/js/note4.html" aria-current="page" class="active sidebar-link">JS数组</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/learningNotes/js/note5.html" class="sidebar-link">JS函数</a></li><li><a href="/learningNotes/js/note6.html" class="sidebar-link">JS运算符</a></li><li><a href="/learningNotes/js/note7.html" class="sidebar-link">JS中if(xx)和 a==b 小结</a></li><li><a href="/learningNotes/js/note8.html" class="sidebar-link">JS实现字符串和数组的相互转化</a></li><li><a href="/learningNotes/js/note9.html" class="sidebar-link">DOM事件传播机制</a></li><li><a href="/learningNotes/js/note99.html" class="sidebar-link">DOM编程</a></li><li><a href="/learningNotes/js/note10.html" class="sidebar-link">跨域</a></li><li><a href="/learningNotes/js/note11.html" class="sidebar-link">闭包练习</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Browser</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>极简记账项目笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他项目笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="js数组"><a href="#js数组" class="header-anchor">#</a> JS数组</h3> <h4 id="特点"><a href="#特点" class="header-anchor">#</a> 特点</h4> <ul><li>元素的数据类型可以不同</li> <li>内存不一定是连续的（对象是随机存储的）</li> <li>不能通过数字下标，而是通过字符串下标</li> <li>数组可以有任何<code>key</code></li></ul> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-ce529d5e906f46c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h3 id="创建数组"><a href="#创建数组" class="header-anchor">#</a> 创建数组</h3> <ul><li>新建数组</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1,2,3]
+let arr = new Array(1,2,3)
+let arr = new Array(3)     //一个参数表示数组长度
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-65b9a957b036b698.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>转化数组</li></ul> <blockquote><p><code>split()</code>方法使用指定的分隔符字符串将一个<code>String</code>对象分割成子字符串数组，以一个指定的分割字串来决定每个拆分的位置。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let arr = '1,2,3'.split(',')
+let arr = '123'.split('')
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-deee7c5aaf7b2446.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p><code>Array.from()</code>方法从一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>Array.from('123')
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-f56ba42234be2c8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>伪数组</li></ul> <blockquote><p>伪数组的原型链中并没有数组的原型
+没有数组公共属性的数组就是伪数组</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-0f79e048309ba24a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>合并数组</li></ul> <blockquote><p><code>concat()</code>方法用于多个数组的合并。它将新数组的成员，添加到原数组成员的后部，然后返回一个新数组，原数组不变</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let a = [1,2,3,4,5];
+let b = [6,7,8,9];
+console.log(a.concat(b));//[1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(a); //[1, 2, 3, 4, 5]
+console.log(b); //[6, 7, 8, 9]
+</code></pre></div><ul><li>截取数组一部分</li></ul> <blockquote><p><code>slice()</code>方法返回一个新的数组对象，这一对象是一个由 begin 和 end 决定的原数组的浅拷贝（包括 begin，不包括end）。原始数组不会被改变。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let arr = [0,1,2,3,4,5,6,7,8];
+arr.slice(2); //从第三个元素开始
+console.log(arr.slice(2));//[2, 3, 4, 5, 6, 7, 8]
+console.log(arr);//[0, 1, 2, 3, 4, 5, 6, 7, 8]
+arr.slice(0)   //全部截取
+</code></pre></div><h3 id="删除元素"><a href="#删除元素" class="header-anchor">#</a> 删除元素</h3> <blockquote><p>错误方法
+使用<code>delete arr[0]</code>删除元素并未改变数组长度，若数组全部为空称之为稀疏数组
+直接修改<code>arr.length</code>会改变数组，出现意外</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-52d30e295677b342.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-25eb8e5bb6ed7a19.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>正确方法</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-b1976d0c3c45cb3b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-eeb55b5c3159c1c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p><code>splice()</code>方法用于删除原数组的一部分成员，并可以在删除的位置添加新的数组成员，返回值是被删除的元素。注意，该方法会改变原数组。
+参数：开始索引、删除元素的位移、插入的新元素</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-0e3babcdaaf18d0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h3 id="查看元素"><a href="#查看元素" class="header-anchor">#</a> 查看元素</h3> <ul><li>查看所有属性名</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1,2,3,4,5]
+for(let i in arr){
+  console.log(`${i}:${arr[i]}`)
+}
+Object.keys(arr)
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-7aed897c922c3028.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>查看数字(字符串)属性名和值</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let arr1 = [1,2,3,4,5,6]
+for(let i=0;i&lt;arr.length;i++){
+  console.log(`${i}:${arr[i]}`)
+}
+arr.forEach(function(item,index){
+  console.log(`${index}:${index}`)
+})
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-0b42cf39e00fe8cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h5 id="理解foreach"><a href="#理解foreach" class="header-anchor">#</a> 理解<code>forEach</code></h5> <div class="language- extra-class"><pre class="language-text"><code>function forEach(array,fn){
+  for(let i=0;i&lt;array.length;i++){
+    fn(array[i],i,array)
+  }
+}
+</code></pre></div><blockquote><p><code>forEach</code>函数使用for循环访问array的每一项
+对每一项调用<code>fn(array[i],i,array)</code></p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-309cbdbccfc59923.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h5 id="foreach函数与for循环的区别："><a href="#foreach函数与for循环的区别：" class="header-anchor">#</a> <code>forEach</code>函数与<code>for</code>循环的区别：</h5> <ul><li>for循环作用域为块级作用域，foreach作用域为函数作用域</li> <li>在 for 循环中可以使用 continue，break 来控制循环和跳出循环;forEach 则必须将循环全部执行</li></ul> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-06a5f0e7b517adc1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>查看单个属性</li></ul> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1,2,3,4,5]
+arr[0]
+</code></pre></div><h5 id="索引越界"><a href="#索引越界" class="header-anchor">#</a> 索引越界</h5> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-ce90827c6b7c04a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-01f97aa1d431ea58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>查看某元素是否在数组</li></ul> <blockquote><p><code>indexOf()</code>方法返回给定元素在数组中第一次出现的位置，如果没有出现则返回-1</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>arr.indexOf(item)   //存在返回索引，否则返回-1
+</code></pre></div><ul><li>使用条件查找元素</li></ul> <blockquote><p><code>find()</code> 方法返回数组中满足提供的测试函数的第一个元素的值。否则返回<code>undefined</code></p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>arr.find(item =&gt; item%2 ===0)   //找第一个偶数
+</code></pre></div><ul><li>使用条件查找元素的索引</li></ul> <blockquote><p><code>findIndex()</code>方法返回数组中满足提供的测试函数的第一个元素的索引。否则返回-1。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>arr.findIndex(item =&gt; item%2 ===0)    //查找第一个偶数的索引
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-de18cc3ebd2f4dc1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h3 id="增加元素"><a href="#增加元素" class="header-anchor">#</a> 增加元素</h3> <ul><li>在头部加元素</li></ul> <div class="language- extra-class"><pre class="language-text"><code>arr.unshift(newItem)   //修改arr，返回新长度
+arr.unshift(item1,item2)  //修改arr，返回新长度
+</code></pre></div><ul><li>在尾部加元素</li></ul> <div class="language- extra-class"><pre class="language-text"><code>arr.push(newitem)   //修改arr，返回新长度
+arr.push(item1,item2) //修改arr,返回新长度
+</code></pre></div><ul><li>在中间添加元素</li></ul> <div class="language- extra-class"><pre class="language-text"><code>arr.splice(index,0,'x')   //在index处插入'x'
+arr.splice(index,0,'x','y')
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-c35650e448993e36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h3 id="修改元素"><a href="#修改元素" class="header-anchor">#</a> 修改元素</h3> <ul><li>反转顺序</li></ul> <blockquote><p><code>reverse()</code>方法将数组中元素的位置颠倒，并返回该数组。数组的第一个元素会变成最后一个，数组的最后一个元素变成第一个。该方法会改变原数组。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>arr.reverse()  //修改原数组
+a.split('').reverse().join('')  //字符串倒序
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-4e00fd27631cae54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>自定义顺序</li></ul> <blockquote><p><code>sort()</code> 方法用原地算法对数组的元素进行排序，并返回数组。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>//比较函数
+function compare(a, b) {
+  if (a &lt; b ) {           // 按某种排序标准进行比较, a 小于 b
+    return -1;
+  }
+  if (a &gt; b ) {
+    return 1;
+  }
+  return 0;
+}
+如果 compareFunction(a, b) 小于 0 ， a 会被排列到 b 之前
+如果 compareFunction(a, b) 等于 0 ， a 和 b 的相对位置不变
+如果 compareFunction(a, b) 大于 0 ， b 会被排列到 a 之前
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-21cbe811b700a7e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-dfe051218edea58b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h3 id="数组变换"><a href="#数组变换" class="header-anchor">#</a> 数组变换</h3> <ul><li>map</li></ul> <blockquote><p>Test1：将数组值变为平方</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1,2,3,4,5]
+arr2.map(item =&gt; item*item)
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-4205ce1b31addc44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>Test2:请使用 arr.map 把 0 变成'周日'，把 1 变成'周一'，以此类推</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let arr = [0,1,2,2,3,3,3,4,4,4,4,6]
+arr.map( item =&gt; { return { 0: '周日', 1: '周一', 2: '周二', 3: '周三', 4: '周四', 5: '周五',6: '周六'}[item]
+})
+</code></pre></div><ul><li>filter</li></ul> <blockquote><p>Test3:取数组偶数</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1,2,3,4,5,6]
+arr.filter(item =&gt; item %2 ==0 )
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-dd826090217a386f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>reduce</li></ul> <blockquote><p>Test4：求数组和</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1,2,3,4,5]
+arr.reduce((sum,item)=&gt;{return sum+item},0)
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-553bf98d5a24ba43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>Test5：使用reduce改写map、reduce</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1,2,3,4,5,6]
+arr.reduce((result,item) =&gt; {return result.concat(item*item)},[])
+
+arr.reduce((result,item) =&gt; {
+  if(item % 2 === 1){
+    return result
+  }else{
+    return result.concat(item)
+  }
+},[])
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-b6773dcfb67bd590.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>Test6：数据变换</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-84fb83ed40cfb6ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <div class="language- extra-class"><pre class="language-text"><code>arr.reduce((result,item)=&gt;{
+  if(item.parent === null){
+    result.id = item.id
+    result['名称'] = item['名称']
+  }else{
+    result.children.push(item)
+    delete item.parent 
+    item.children = null
+  }
+  return result 
+},{id:null,children:[]})
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-fc2ad176933e7bd1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/learningNotes/js/note3.html" class="prev">
+        JS原型、原型链
+      </a></span> <span class="next"><a href="/learningNotes/js/note5.html">
+        JS函数
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/learningNotes/assets/js/app.fda5b0ab.js" defer></script><script src="/learningNotes/assets/js/2.8795140b.js" defer></script><script src="/learningNotes/assets/js/56.0e5940bf.js" defer></script>
+  </body>
+</html>

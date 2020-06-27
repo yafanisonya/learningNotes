@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>jQuery动画相关函数 | Learning Notes</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/learningNotes/favicon.ico">
+    <meta name="description" content="Keep Learning, Keep Growing, Keep Succeeding">
+    <link rel="preload" href="/learningNotes/assets/css/0.styles.12d3ff79.css" as="style"><link rel="preload" href="/learningNotes/assets/js/app.fda5b0ab.js" as="script"><link rel="preload" href="/learningNotes/assets/js/2.8795140b.js" as="script"><link rel="preload" href="/learningNotes/assets/js/46.dc8741f0.js" as="script"><link rel="prefetch" href="/learningNotes/assets/js/10.1e310ae4.js"><link rel="prefetch" href="/learningNotes/assets/js/11.9b19a07e.js"><link rel="prefetch" href="/learningNotes/assets/js/12.c838d67b.js"><link rel="prefetch" href="/learningNotes/assets/js/13.381a0216.js"><link rel="prefetch" href="/learningNotes/assets/js/14.fba6f027.js"><link rel="prefetch" href="/learningNotes/assets/js/15.1c45a95e.js"><link rel="prefetch" href="/learningNotes/assets/js/16.1d219538.js"><link rel="prefetch" href="/learningNotes/assets/js/17.d688009c.js"><link rel="prefetch" href="/learningNotes/assets/js/18.3ba198da.js"><link rel="prefetch" href="/learningNotes/assets/js/19.76783276.js"><link rel="prefetch" href="/learningNotes/assets/js/20.4957a2e2.js"><link rel="prefetch" href="/learningNotes/assets/js/21.080dd316.js"><link rel="prefetch" href="/learningNotes/assets/js/22.c7797c05.js"><link rel="prefetch" href="/learningNotes/assets/js/23.d3fdce57.js"><link rel="prefetch" href="/learningNotes/assets/js/24.abfd7ea1.js"><link rel="prefetch" href="/learningNotes/assets/js/25.f2cf88e3.js"><link rel="prefetch" href="/learningNotes/assets/js/26.a1e5b74c.js"><link rel="prefetch" href="/learningNotes/assets/js/27.bce472b8.js"><link rel="prefetch" href="/learningNotes/assets/js/28.ba6d9401.js"><link rel="prefetch" href="/learningNotes/assets/js/29.813388af.js"><link rel="prefetch" href="/learningNotes/assets/js/3.4b6ff1e5.js"><link rel="prefetch" href="/learningNotes/assets/js/30.5b313922.js"><link rel="prefetch" href="/learningNotes/assets/js/31.b2beafa1.js"><link rel="prefetch" href="/learningNotes/assets/js/32.6bec7c08.js"><link rel="prefetch" href="/learningNotes/assets/js/33.febc993b.js"><link rel="prefetch" href="/learningNotes/assets/js/34.6511e4de.js"><link rel="prefetch" href="/learningNotes/assets/js/35.a98f3ae3.js"><link rel="prefetch" href="/learningNotes/assets/js/36.7c14d960.js"><link rel="prefetch" href="/learningNotes/assets/js/37.391e7f03.js"><link rel="prefetch" href="/learningNotes/assets/js/38.7d0833c6.js"><link rel="prefetch" href="/learningNotes/assets/js/39.42ee6d63.js"><link rel="prefetch" href="/learningNotes/assets/js/4.3517de2a.js"><link rel="prefetch" href="/learningNotes/assets/js/40.454b7b2b.js"><link rel="prefetch" href="/learningNotes/assets/js/41.1030c50f.js"><link rel="prefetch" href="/learningNotes/assets/js/42.053e784b.js"><link rel="prefetch" href="/learningNotes/assets/js/43.7b9e7ebd.js"><link rel="prefetch" href="/learningNotes/assets/js/44.a4077cfe.js"><link rel="prefetch" href="/learningNotes/assets/js/45.9871b7d5.js"><link rel="prefetch" href="/learningNotes/assets/js/47.8616dc07.js"><link rel="prefetch" href="/learningNotes/assets/js/48.19609aa3.js"><link rel="prefetch" href="/learningNotes/assets/js/49.00af8837.js"><link rel="prefetch" href="/learningNotes/assets/js/5.d8e4db26.js"><link rel="prefetch" href="/learningNotes/assets/js/50.55e9f893.js"><link rel="prefetch" href="/learningNotes/assets/js/51.643f5d5b.js"><link rel="prefetch" href="/learningNotes/assets/js/52.34ae848c.js"><link rel="prefetch" href="/learningNotes/assets/js/53.3f416545.js"><link rel="prefetch" href="/learningNotes/assets/js/54.84acf50a.js"><link rel="prefetch" href="/learningNotes/assets/js/55.00c96a68.js"><link rel="prefetch" href="/learningNotes/assets/js/56.0e5940bf.js"><link rel="prefetch" href="/learningNotes/assets/js/57.a1958548.js"><link rel="prefetch" href="/learningNotes/assets/js/58.36bb823d.js"><link rel="prefetch" href="/learningNotes/assets/js/59.4954a3c8.js"><link rel="prefetch" href="/learningNotes/assets/js/6.0672d94d.js"><link rel="prefetch" href="/learningNotes/assets/js/60.14640f51.js"><link rel="prefetch" href="/learningNotes/assets/js/61.0312f266.js"><link rel="prefetch" href="/learningNotes/assets/js/62.7697078f.js"><link rel="prefetch" href="/learningNotes/assets/js/63.f897d9d2.js"><link rel="prefetch" href="/learningNotes/assets/js/64.e9fd6c82.js"><link rel="prefetch" href="/learningNotes/assets/js/65.fb786054.js"><link rel="prefetch" href="/learningNotes/assets/js/66.3989266a.js"><link rel="prefetch" href="/learningNotes/assets/js/67.67933591.js"><link rel="prefetch" href="/learningNotes/assets/js/68.f2a39cc9.js"><link rel="prefetch" href="/learningNotes/assets/js/69.9ce7e4b3.js"><link rel="prefetch" href="/learningNotes/assets/js/7.54547a7f.js"><link rel="prefetch" href="/learningNotes/assets/js/70.777a5d57.js"><link rel="prefetch" href="/learningNotes/assets/js/71.8e6e4fea.js"><link rel="prefetch" href="/learningNotes/assets/js/72.f50a2759.js"><link rel="prefetch" href="/learningNotes/assets/js/73.722e119b.js"><link rel="prefetch" href="/learningNotes/assets/js/8.469ab190.js"><link rel="prefetch" href="/learningNotes/assets/js/9.00cf94d6.js">
+    <link rel="stylesheet" href="/learningNotes/assets/css/0.styles.12d3ff79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learningNotes/" class="home-link router-link-active"><img src="/learningNotes/images.jpg" alt="Learning Notes" class="logo"> <span class="site-name can-hide">Learning Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Home</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>jQuery</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/learningNotes/jQuery/note0.html" class="sidebar-link">jQuery基础</a></li><li><a href="/learningNotes/jQuery/note1.html" class="sidebar-link">jQuery选择器</a></li><li><a href="/learningNotes/jQuery/note2.html" class="sidebar-link">jQuery常用方法</a></li><li><a href="/learningNotes/jQuery/note3.html" class="sidebar-link">jQuery属性&amp;CSS操作</a></li><li><a href="/learningNotes/jQuery/note4.html" aria-current="page" class="active sidebar-link">jQuery动画相关函数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/learningNotes/jQuery/note5.html" class="sidebar-link">jQuery Ajax</a></li><li><a href="/learningNotes/jQuery/note6.html" class="sidebar-link">jQuery绑定事件与事件代理</a></li><li><a href="/learningNotes/jQuery/note7.html" class="sidebar-link">jQuery懒加载</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Browser</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>极简记账项目笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他项目笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="jquery动画相关函数"><a href="#jquery动画相关函数" class="header-anchor">#</a> jQuery动画相关函数</h3> <ul><li><h4 id="hide-用于隐藏元素"><a href="#hide-用于隐藏元素" class="header-anchor">#</a> .hide()  用于隐藏元素</h4></li></ul> <p><code>.hide([duration ] [,easing ] [,complete ])</code></p> <blockquote><p><strong>duration</strong> (default: <code>400</code>)
+Type: <a href="http://api.jquery.com/Types/#Number" target="_blank" rel="noopener noreferrer">Number<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> or <a href="http://api.jquery.com/Types/#String" target="_blank" rel="noopener noreferrer">String<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+一个字符串或者数字决定动画将运行多久。（注：默认值: &quot;normal&quot;， 三种预定速度的字符串(&quot;slow&quot;, &quot;normal&quot;, 或 &quot;fast&quot;)或表示动画时长的毫秒数值(如：1000) ）
+<strong>easing</strong> (默认: <code>swing</code>)
+类型: <a href="https://www.jquery123.com/Types/#String" target="_blank" rel="noopener noreferrer">String<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+一个字符串，表示过渡使用哪种缓动函数。
+<strong>complete</strong>
+类型: <a href="https://www.jquery123.com/Types/#Function" target="_blank" rel="noopener noreferrer">Function<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>()
+在动画完成时执行的函数。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code> $('.box').hide('fast');      //等同于 $('.box').css('display', 'none')
+ $('.box').hide(3000, function() {
+    alert('Animation complete.')
+ })
+ $('#book').hide(3000, 'linear', function() {
+   alert('Animation complete.');
+ })
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-c52d73560969f942.gif?imageMogr2/auto-orient/strip" alt="hide"></p> <ul><li><h4 id="show-用于显示元素，用法和hide类似"><a href="#show-用于显示元素，用法和hide类似" class="header-anchor">#</a> .show()  用于显示元素，用法和hide类似</h4></li></ul> <p>.show( [duration ] [, easing ] [, complete ] )</p> <div class="language- extra-class"><pre class="language-text"><code> $('.box').show('slow');      //等同于 $('.box').css('display', 'block')
+ $('.box').show(3000, function() {
+    alert('Animation complete.')
+ })
+ $('#book').show(3000, 'linear', function() {
+   alert('Animation complete.');
+ })
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-76631f17c4eb3e95.gif?imageMogr2/auto-orient/strip" alt="show"></p> <h3 id="渐变"><a href="#渐变" class="header-anchor">#</a> 渐变</h3> <ul><li><h4 id="fadein-通过淡入的方式显示匹配元素"><a href="#fadein-通过淡入的方式显示匹配元素" class="header-anchor">#</a> .fadeIn()  通过淡入的方式显示匹配元素</h4></li></ul> <p><code>.fadeIn( [duration ] [, easing ] [, complete ] )</code></p> <div class="language- extra-class"><pre class="language-text"><code>$('.box').fadeIn(5000)
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-742f466ae7e5c0bb.gif?imageMogr2/auto-orient/strip" alt="fadeIn"></p> <ul><li><h4 id="fadeout-通过淡出的方式显示匹配元素"><a href="#fadeout-通过淡出的方式显示匹配元素" class="header-anchor">#</a> .fadeOut()  通过淡出的方式显示匹配元素</h4></li></ul> <p><code>.fadeOut( [duration ] [, easing ] [, complete ] )</code></p> <div class="language- extra-class"><pre class="language-text"><code>$('.box').fadeOut('slow')
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-6e79e102fe858692.gif?imageMogr2/auto-orient/strip" alt="fadeOut"></p> <h3 id="滑动"><a href="#滑动" class="header-anchor">#</a> 滑动</h3> <ul><li><h4 id="slidedown"><a href="#slidedown" class="header-anchor">#</a> .slideDown()</h4></li></ul> <p><code>.slideDown( [duration ] [, easing ] [, complete ] )</code></p> <blockquote><p>用滑动动画显示一个匹配元素，方法将给匹配元素的高度的动画，这会导致页面的下面部分滑下去，弥补了显示的方式</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$('.box').slideDown('slow', function() {
+    // Animation complete.
+});
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-3ef0a461273d77c5.gif?imageMogr2/auto-orient/strip" alt="slideDown"></p> <ul><li><h4 id="slideup"><a href="#slideup" class="header-anchor">#</a> .slideUp()</h4></li></ul> <p><code>.slideUp( [duration ] [, easing ] [, complete ] )</code></p> <blockquote><p>用滑动动画隐藏一个匹配元素，方法将给匹配元素的高度的动画，这会导致页面的下面部分滑上去，当一个隐藏动画后，高度值达到0的时候，display 样式属性被设置为none，以确保该元素不再影响页面布局。 display 样式属性将被设置为none，以确保该元素不再影响页面布局。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$('#book').slideUp('slow', function() {
+    // Animation complete.
+});
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-a6010c6839ccffd4.gif?imageMogr2/auto-orient/strip" alt="slideUp"></p> <ul><li><h4 id="slidetoggle"><a href="#slidetoggle" class="header-anchor">#</a> .slideToggle()</h4></li></ul> <p><code>.slideToggle( [duration ] [, easing ] [, complete ] )</code></p> <blockquote><p>用滑动动画显示或隐藏一个匹配元素，方法将给匹配元素的高度的动画，这会导致页面中，在这个元素下面的内容往下或往上滑。display属性值保存在jQuery的数据缓存中，所以display可以方便以后可以恢复到其初始值。
+如果一个元素的display属性值为inline，然后是隐藏和显示，这个元素将再次显示inline。当一个隐藏动画后，高度值达到0的时候，display 样式属性被设置为none，以确保该元素不再影响页面布局。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$('#clickme').click(function() {
+ $('.div').slideToggle('slow', function() {
+ // Animation complete.
+ });
+});
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-2d3968cfa30f21ba.gif?imageMogr2/auto-orient/strip" alt="slideToggle"></p> <ul><li><h4 id="animate"><a href="#animate" class="header-anchor">#</a> .animate()</h4></li></ul> <p><code>.animate( properties [, duration ] [, easing ] [, complete ] )</code></p> <blockquote><p>根据一组 CSS 属性，执行自定义动画。
+<strong>properties</strong>
+类型: <a href="https://www.jquery123.com/Types/#PlainObject" target="_blank" rel="noopener noreferrer">PlainObject<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+一个CSS属性和值的对象,动画将根据这组对象移动。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>  &lt;button id=&quot;btn1&quot;&gt;start&lt;/button&gt;
+  &lt;button id=&quot;btn2&quot;&gt;reset/button&gt;
+ &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+.container{
+  position: relative;
+}
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+&lt;script&gt;
+    $('#btn1').click(function(){
+      $('.box').animate({
+        left: '500px'
+      }, 1000)
+    })
+ $('#btn2').click(function(){
+      $('.box').animate({
+        left: 0
+      }, 1000)
+    })
+&lt;/script&gt;
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-15be4b00a12fbc0c.gif?imageMogr2/auto-orient/strip" alt="animate"></p> <ul><li><h4 id="stop"><a href="#stop" class="header-anchor">#</a> .stop()</h4></li></ul> <blockquote><p>停止当前正在运行的动画</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$('#btn3').click(function(){
+   $('.box').stop()
+})
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-c4d584791de7683a.gif?imageMogr2/auto-orient/strip" alt="stop"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/learningNotes/jQuery/note3.html" class="prev">
+        jQuery属性&amp;CSS操作
+      </a></span> <span class="next"><a href="/learningNotes/jQuery/note5.html">
+        jQuery Ajax
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/learningNotes/assets/js/app.fda5b0ab.js" defer></script><script src="/learningNotes/assets/js/2.8795140b.js" defer></script><script src="/learningNotes/assets/js/46.dc8741f0.js" defer></script>
+  </body>
+</html>

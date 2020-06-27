@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS原型、原型链 | Learning Notes</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/learningNotes/favicon.ico">
+    <meta name="description" content="Keep Learning, Keep Growing, Keep Succeeding">
+    <link rel="preload" href="/learningNotes/assets/css/0.styles.12d3ff79.css" as="style"><link rel="preload" href="/learningNotes/assets/js/app.fda5b0ab.js" as="script"><link rel="preload" href="/learningNotes/assets/js/2.8795140b.js" as="script"><link rel="preload" href="/learningNotes/assets/js/55.00c96a68.js" as="script"><link rel="prefetch" href="/learningNotes/assets/js/10.1e310ae4.js"><link rel="prefetch" href="/learningNotes/assets/js/11.9b19a07e.js"><link rel="prefetch" href="/learningNotes/assets/js/12.c838d67b.js"><link rel="prefetch" href="/learningNotes/assets/js/13.381a0216.js"><link rel="prefetch" href="/learningNotes/assets/js/14.fba6f027.js"><link rel="prefetch" href="/learningNotes/assets/js/15.1c45a95e.js"><link rel="prefetch" href="/learningNotes/assets/js/16.1d219538.js"><link rel="prefetch" href="/learningNotes/assets/js/17.d688009c.js"><link rel="prefetch" href="/learningNotes/assets/js/18.3ba198da.js"><link rel="prefetch" href="/learningNotes/assets/js/19.76783276.js"><link rel="prefetch" href="/learningNotes/assets/js/20.4957a2e2.js"><link rel="prefetch" href="/learningNotes/assets/js/21.080dd316.js"><link rel="prefetch" href="/learningNotes/assets/js/22.c7797c05.js"><link rel="prefetch" href="/learningNotes/assets/js/23.d3fdce57.js"><link rel="prefetch" href="/learningNotes/assets/js/24.abfd7ea1.js"><link rel="prefetch" href="/learningNotes/assets/js/25.f2cf88e3.js"><link rel="prefetch" href="/learningNotes/assets/js/26.a1e5b74c.js"><link rel="prefetch" href="/learningNotes/assets/js/27.bce472b8.js"><link rel="prefetch" href="/learningNotes/assets/js/28.ba6d9401.js"><link rel="prefetch" href="/learningNotes/assets/js/29.813388af.js"><link rel="prefetch" href="/learningNotes/assets/js/3.4b6ff1e5.js"><link rel="prefetch" href="/learningNotes/assets/js/30.5b313922.js"><link rel="prefetch" href="/learningNotes/assets/js/31.b2beafa1.js"><link rel="prefetch" href="/learningNotes/assets/js/32.6bec7c08.js"><link rel="prefetch" href="/learningNotes/assets/js/33.febc993b.js"><link rel="prefetch" href="/learningNotes/assets/js/34.6511e4de.js"><link rel="prefetch" href="/learningNotes/assets/js/35.a98f3ae3.js"><link rel="prefetch" href="/learningNotes/assets/js/36.7c14d960.js"><link rel="prefetch" href="/learningNotes/assets/js/37.391e7f03.js"><link rel="prefetch" href="/learningNotes/assets/js/38.7d0833c6.js"><link rel="prefetch" href="/learningNotes/assets/js/39.42ee6d63.js"><link rel="prefetch" href="/learningNotes/assets/js/4.3517de2a.js"><link rel="prefetch" href="/learningNotes/assets/js/40.454b7b2b.js"><link rel="prefetch" href="/learningNotes/assets/js/41.1030c50f.js"><link rel="prefetch" href="/learningNotes/assets/js/42.053e784b.js"><link rel="prefetch" href="/learningNotes/assets/js/43.7b9e7ebd.js"><link rel="prefetch" href="/learningNotes/assets/js/44.a4077cfe.js"><link rel="prefetch" href="/learningNotes/assets/js/45.9871b7d5.js"><link rel="prefetch" href="/learningNotes/assets/js/46.dc8741f0.js"><link rel="prefetch" href="/learningNotes/assets/js/47.8616dc07.js"><link rel="prefetch" href="/learningNotes/assets/js/48.19609aa3.js"><link rel="prefetch" href="/learningNotes/assets/js/49.00af8837.js"><link rel="prefetch" href="/learningNotes/assets/js/5.d8e4db26.js"><link rel="prefetch" href="/learningNotes/assets/js/50.55e9f893.js"><link rel="prefetch" href="/learningNotes/assets/js/51.643f5d5b.js"><link rel="prefetch" href="/learningNotes/assets/js/52.34ae848c.js"><link rel="prefetch" href="/learningNotes/assets/js/53.3f416545.js"><link rel="prefetch" href="/learningNotes/assets/js/54.84acf50a.js"><link rel="prefetch" href="/learningNotes/assets/js/56.0e5940bf.js"><link rel="prefetch" href="/learningNotes/assets/js/57.a1958548.js"><link rel="prefetch" href="/learningNotes/assets/js/58.36bb823d.js"><link rel="prefetch" href="/learningNotes/assets/js/59.4954a3c8.js"><link rel="prefetch" href="/learningNotes/assets/js/6.0672d94d.js"><link rel="prefetch" href="/learningNotes/assets/js/60.14640f51.js"><link rel="prefetch" href="/learningNotes/assets/js/61.0312f266.js"><link rel="prefetch" href="/learningNotes/assets/js/62.7697078f.js"><link rel="prefetch" href="/learningNotes/assets/js/63.f897d9d2.js"><link rel="prefetch" href="/learningNotes/assets/js/64.e9fd6c82.js"><link rel="prefetch" href="/learningNotes/assets/js/65.fb786054.js"><link rel="prefetch" href="/learningNotes/assets/js/66.3989266a.js"><link rel="prefetch" href="/learningNotes/assets/js/67.67933591.js"><link rel="prefetch" href="/learningNotes/assets/js/68.f2a39cc9.js"><link rel="prefetch" href="/learningNotes/assets/js/69.9ce7e4b3.js"><link rel="prefetch" href="/learningNotes/assets/js/7.54547a7f.js"><link rel="prefetch" href="/learningNotes/assets/js/70.777a5d57.js"><link rel="prefetch" href="/learningNotes/assets/js/71.8e6e4fea.js"><link rel="prefetch" href="/learningNotes/assets/js/72.f50a2759.js"><link rel="prefetch" href="/learningNotes/assets/js/73.722e119b.js"><link rel="prefetch" href="/learningNotes/assets/js/8.469ab190.js"><link rel="prefetch" href="/learningNotes/assets/js/9.00cf94d6.js">
+    <link rel="stylesheet" href="/learningNotes/assets/css/0.styles.12d3ff79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learningNotes/" class="home-link router-link-active"><img src="/learningNotes/images.jpg" alt="Learning Notes" class="logo"> <span class="site-name can-hide">Learning Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Home</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/learningNotes/js/note0.html" class="sidebar-link">JS基本语法</a></li><li><a href="/learningNotes/js/note1.html" class="sidebar-link">JS数据类型</a></li><li><a href="/learningNotes/js/note2.html" class="sidebar-link">JS对象基本语法</a></li><li><a href="/learningNotes/js/note3.html" aria-current="page" class="active sidebar-link">JS原型、原型链</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/learningNotes/js/note3.html#原型" class="sidebar-link">原型</a></li></ul></li><li><a href="/learningNotes/js/note4.html" class="sidebar-link">JS数组</a></li><li><a href="/learningNotes/js/note5.html" class="sidebar-link">JS函数</a></li><li><a href="/learningNotes/js/note6.html" class="sidebar-link">JS运算符</a></li><li><a href="/learningNotes/js/note7.html" class="sidebar-link">JS中if(xx)和 a==b 小结</a></li><li><a href="/learningNotes/js/note8.html" class="sidebar-link">JS实现字符串和数组的相互转化</a></li><li><a href="/learningNotes/js/note9.html" class="sidebar-link">DOM事件传播机制</a></li><li><a href="/learningNotes/js/note99.html" class="sidebar-link">DOM编程</a></li><li><a href="/learningNotes/js/note10.html" class="sidebar-link">跨域</a></li><li><a href="/learningNotes/js/note11.html" class="sidebar-link">闭包练习</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Browser</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>极简记账项目笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他项目笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="js原型、原型链"><a href="#js原型、原型链" class="header-anchor">#</a> JS原型、原型链</h3> <blockquote><p>为什么需要对象分类？</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-6adb7025037d97be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>类型是对 JS 中数据的分类
+JS 中的类型有：数字、字符串、布尔、符号Symbol、null、undefined、对象</li> <li>类是对 JS 中对象的分类
+JS 中的类有：数组 Array、函数 Function 、Date、RegExp等</li></ul> <h3 id="new操作符"><a href="#new操作符" class="header-anchor">#</a> new操作符</h3> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-efd4d1461483d1ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>创建new X()时做了什么？</p></blockquote> <ul><li>自动创建空对象</li> <li>自动将空对象关联原型，原型地址指定为<code>X.prototype</code>（即将 <code>X.prototype</code>保存的地址复制到 <code>空对象.__proto__</code>里）</li> <li>自动将空对象作为<code>this</code>关键字运行构造函数</li> <li>自动<code>return this</code></li></ul> <blockquote><p>构造函数X</p></blockquote> <ul><li>X函数本身负责给对象本身添加属性</li> <li><code>X.prototype</code>对象负责保存对象的共用属性</li></ul> <h3 id="js-构造对象方式"><a href="#js-构造对象方式" class="header-anchor">#</a> JS 构造对象方式</h3> <h4 id="代码规范"><a href="#代码规范" class="header-anchor">#</a> 代码规范</h4> <ul><li>大小写
+所有构造函数（专门用于创建对象的函数）首字母大写
+所有被构造出来的对象，首字母小写</li> <li>词性
+new后面的函数，使用名词形式(<code>new Person()</code>、<code>new Object()</code>)
+其他函数，一般使用动词开头(<code>createSquare()</code>、<code>createElement('div')</code>)</li></ul> <h4 id="方式一：用-class"><a href="#方式一：用-class" class="header-anchor">#</a> 方式一：用 class</h4> <blockquote><p>Example：</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>class Square{
+  static x = 1
+  width = 0
+  constructor(width){
+    this.width = width
+  }
+  getArea(){
+    return this.width * this.width
+  }
+  get length(){ //只读属性
+    return this.width * 4
+  }
+}
+let square = new Square(5)
+square.width
+square.getArea()
+square.length()
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-196d60ba12f821ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h4 id="方式二：用构造函数-prototype"><a href="#方式二：用构造函数-prototype" class="header-anchor">#</a> 方式二：用构造函数+prototype</h4> <blockquote><p>自己定义构造函数Rect，函数里给this加属性
+Rect自动创建prototype属性和对应的对象 #207
+在Person.prototype #207 上面加属性
+用new Rect() 创建对象 react
+new会将Rect的原型 __p设为 #207</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>function Rect(width, height){
+  this.width = width
+  this.height = height
+}
+Rect.prototype.getArea = function(){
+  return this.width * this.height
+}
+Rect.prototype.getLength = function(){
+  return (this.width + this.height) * 2
+}
+let react = new Rect(4,5)
+rect.width
+rect.height
+rect.getArea()
+rect.getLength()
+</code></pre></div><h2 id="原型"><a href="#原型" class="header-anchor">#</a> 原型</h2> <div class="language- extra-class"><pre class="language-text"><code>let obj = new Object()     //原型 Object.prototype
+let arr =new Array()       //原型 Array.prototype
+let square = new Squrae()  //原型 Square.prototype
+let fn = new Function()    //原型 Function.prototype
+</code></pre></div><h4 id="对象-proto-其构造函数-prototype"><a href="#对象-proto-其构造函数-prototype" class="header-anchor">#</a> 对象.<strong>proto</strong>  === 其构造函数.prototype</h4> <blockquote><p>Test1: <code>let x = {}</code> x的原型是什么
+<code>x.__proto__ = Object.prototype</code></p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-3ffdfaa0c1580f43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>Test2:
+<code>Object.prototype</code>的构造函数： 无<br> <code>Object.prototype</code>的原型： <code>null</code> <code>Object.prototype.__proto__</code>的原型 : <code>null</code></p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-846ec92b031b0908.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>Test3:
+window是谁构造的？
+<code>Window()</code>
+window.Object是谁构造的？
+<code>window.Function</code>
+window.Function是谁构造的？
+<code>window.Function</code></p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-6538ef2e217d5d7f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>Test4:多选题</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-5f4bcd97f75eefb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-00cb0dc311f06620.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-040ec146cfce6eeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h4 id="js公式："><a href="#js公式：" class="header-anchor">#</a> JS公式：</h4> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-4d7974f4e67a9832.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h4 id="根公理："><a href="#根公理：" class="header-anchor">#</a> 根公理：</h4> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-31340db07361aa15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h4 id="函数公理："><a href="#函数公理：" class="header-anchor">#</a> 函数公理：</h4> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-bc086e0f7e0791a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-23179166cff9beaf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>Test</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-7bbda253747e63a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/learningNotes/js/note2.html" class="prev">
+        JS对象基本语法
+      </a></span> <span class="next"><a href="/learningNotes/js/note4.html">
+        JS数组
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/learningNotes/assets/js/app.fda5b0ab.js" defer></script><script src="/learningNotes/assets/js/2.8795140b.js" defer></script><script src="/learningNotes/assets/js/55.00c96a68.js" defer></script>
+  </body>
+</html>

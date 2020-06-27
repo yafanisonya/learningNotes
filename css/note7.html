@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css深入浅出之宽度与高度 | Learning Notes</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/learningNotes/favicon.ico">
+    <meta name="description" content="Keep Learning, Keep Growing, Keep Succeeding">
+    <link rel="preload" href="/learningNotes/assets/css/0.styles.12d3ff79.css" as="style"><link rel="preload" href="/learningNotes/assets/js/app.fda5b0ab.js" as="script"><link rel="preload" href="/learningNotes/assets/js/2.8795140b.js" as="script"><link rel="preload" href="/learningNotes/assets/js/39.42ee6d63.js" as="script"><link rel="prefetch" href="/learningNotes/assets/js/10.1e310ae4.js"><link rel="prefetch" href="/learningNotes/assets/js/11.9b19a07e.js"><link rel="prefetch" href="/learningNotes/assets/js/12.c838d67b.js"><link rel="prefetch" href="/learningNotes/assets/js/13.381a0216.js"><link rel="prefetch" href="/learningNotes/assets/js/14.fba6f027.js"><link rel="prefetch" href="/learningNotes/assets/js/15.1c45a95e.js"><link rel="prefetch" href="/learningNotes/assets/js/16.1d219538.js"><link rel="prefetch" href="/learningNotes/assets/js/17.d688009c.js"><link rel="prefetch" href="/learningNotes/assets/js/18.3ba198da.js"><link rel="prefetch" href="/learningNotes/assets/js/19.76783276.js"><link rel="prefetch" href="/learningNotes/assets/js/20.4957a2e2.js"><link rel="prefetch" href="/learningNotes/assets/js/21.080dd316.js"><link rel="prefetch" href="/learningNotes/assets/js/22.c7797c05.js"><link rel="prefetch" href="/learningNotes/assets/js/23.d3fdce57.js"><link rel="prefetch" href="/learningNotes/assets/js/24.abfd7ea1.js"><link rel="prefetch" href="/learningNotes/assets/js/25.f2cf88e3.js"><link rel="prefetch" href="/learningNotes/assets/js/26.a1e5b74c.js"><link rel="prefetch" href="/learningNotes/assets/js/27.bce472b8.js"><link rel="prefetch" href="/learningNotes/assets/js/28.ba6d9401.js"><link rel="prefetch" href="/learningNotes/assets/js/29.813388af.js"><link rel="prefetch" href="/learningNotes/assets/js/3.4b6ff1e5.js"><link rel="prefetch" href="/learningNotes/assets/js/30.5b313922.js"><link rel="prefetch" href="/learningNotes/assets/js/31.b2beafa1.js"><link rel="prefetch" href="/learningNotes/assets/js/32.6bec7c08.js"><link rel="prefetch" href="/learningNotes/assets/js/33.febc993b.js"><link rel="prefetch" href="/learningNotes/assets/js/34.6511e4de.js"><link rel="prefetch" href="/learningNotes/assets/js/35.a98f3ae3.js"><link rel="prefetch" href="/learningNotes/assets/js/36.7c14d960.js"><link rel="prefetch" href="/learningNotes/assets/js/37.391e7f03.js"><link rel="prefetch" href="/learningNotes/assets/js/38.7d0833c6.js"><link rel="prefetch" href="/learningNotes/assets/js/4.3517de2a.js"><link rel="prefetch" href="/learningNotes/assets/js/40.454b7b2b.js"><link rel="prefetch" href="/learningNotes/assets/js/41.1030c50f.js"><link rel="prefetch" href="/learningNotes/assets/js/42.053e784b.js"><link rel="prefetch" href="/learningNotes/assets/js/43.7b9e7ebd.js"><link rel="prefetch" href="/learningNotes/assets/js/44.a4077cfe.js"><link rel="prefetch" href="/learningNotes/assets/js/45.9871b7d5.js"><link rel="prefetch" href="/learningNotes/assets/js/46.dc8741f0.js"><link rel="prefetch" href="/learningNotes/assets/js/47.8616dc07.js"><link rel="prefetch" href="/learningNotes/assets/js/48.19609aa3.js"><link rel="prefetch" href="/learningNotes/assets/js/49.00af8837.js"><link rel="prefetch" href="/learningNotes/assets/js/5.d8e4db26.js"><link rel="prefetch" href="/learningNotes/assets/js/50.55e9f893.js"><link rel="prefetch" href="/learningNotes/assets/js/51.643f5d5b.js"><link rel="prefetch" href="/learningNotes/assets/js/52.34ae848c.js"><link rel="prefetch" href="/learningNotes/assets/js/53.3f416545.js"><link rel="prefetch" href="/learningNotes/assets/js/54.84acf50a.js"><link rel="prefetch" href="/learningNotes/assets/js/55.00c96a68.js"><link rel="prefetch" href="/learningNotes/assets/js/56.0e5940bf.js"><link rel="prefetch" href="/learningNotes/assets/js/57.a1958548.js"><link rel="prefetch" href="/learningNotes/assets/js/58.36bb823d.js"><link rel="prefetch" href="/learningNotes/assets/js/59.4954a3c8.js"><link rel="prefetch" href="/learningNotes/assets/js/6.0672d94d.js"><link rel="prefetch" href="/learningNotes/assets/js/60.14640f51.js"><link rel="prefetch" href="/learningNotes/assets/js/61.0312f266.js"><link rel="prefetch" href="/learningNotes/assets/js/62.7697078f.js"><link rel="prefetch" href="/learningNotes/assets/js/63.f897d9d2.js"><link rel="prefetch" href="/learningNotes/assets/js/64.e9fd6c82.js"><link rel="prefetch" href="/learningNotes/assets/js/65.fb786054.js"><link rel="prefetch" href="/learningNotes/assets/js/66.3989266a.js"><link rel="prefetch" href="/learningNotes/assets/js/67.67933591.js"><link rel="prefetch" href="/learningNotes/assets/js/68.f2a39cc9.js"><link rel="prefetch" href="/learningNotes/assets/js/69.9ce7e4b3.js"><link rel="prefetch" href="/learningNotes/assets/js/7.54547a7f.js"><link rel="prefetch" href="/learningNotes/assets/js/70.777a5d57.js"><link rel="prefetch" href="/learningNotes/assets/js/71.8e6e4fea.js"><link rel="prefetch" href="/learningNotes/assets/js/72.f50a2759.js"><link rel="prefetch" href="/learningNotes/assets/js/73.722e119b.js"><link rel="prefetch" href="/learningNotes/assets/js/8.469ab190.js"><link rel="prefetch" href="/learningNotes/assets/js/9.00cf94d6.js">
+    <link rel="stylesheet" href="/learningNotes/assets/css/0.styles.12d3ff79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learningNotes/" class="home-link router-link-active"><img src="/learningNotes/images.jpg" alt="Learning Notes" class="logo"> <span class="site-name can-hide">Learning Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Home</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>CSS</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/learningNotes/css/note5.html" class="sidebar-link">css四种引用方式</a></li><li><a href="/learningNotes/css/note0.html" class="sidebar-link">CSS 基础</a></li><li><a href="/learningNotes/css/note1.html" class="sidebar-link">Float布局</a></li><li><a href="/learningNotes/css/note2.html" class="sidebar-link">Flex布局</a></li><li><a href="/learningNotes/css/note3.html" class="sidebar-link">CSS定位(一)</a></li><li><a href="/learningNotes/css/note33.html" class="sidebar-link">CSS定位(二)</a></li><li><a href="/learningNotes/css/note4.html" class="sidebar-link">CSS动画</a></li><li><a href="/learningNotes/css/note6.html" class="sidebar-link">画等边三角形</a></li><li><a href="/learningNotes/css/note7.html" aria-current="page" class="active sidebar-link">css深入浅出之宽度与高度</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Browser</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>极简记账项目笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他项目笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="css深入浅出之宽度与高度"><a href="#css深入浅出之宽度与高度" class="header-anchor">#</a> css深入浅出之宽度与高度</h3> <h4 id="文档流：文档内元素的流动方向"><a href="#文档流：文档内元素的流动方向" class="header-anchor">#</a> 文档流：文档内元素的流动方向</h4> <ul><li><h5 id="内联元素从左往右"><a href="#内联元素从左往右" class="header-anchor">#</a> 内联元素从左往右</h5></li> <li><h5 id="块级元素从上往下"><a href="#块级元素从上往下" class="header-anchor">#</a> 块级元素从上往下</h5></li></ul> <p>#<code>block，inline，inline-block 元素的区别：</code></p> <blockquote><p>block 元素独占一行，宽度占满父元素宽度。可以设置 width, height, padding, margin 属性。如 div p ul 等。 block 元素可以包含其他 block 元素和 inline 元素，比较特别的是 </p><p> 只能包含 inline 元素。
+inline 元素不换行，宽度由其内容决定。设置 width, height 无效。如 span em strong 等。 设置水平方向 padding(padding-left, padding-right) 和 margin(margin-left, margin-right) 有效， 垂直方向的 padding(padding-top, padding-bottom)，margin(margin-top, margin-bottom) 无效。
+inline-block 元素不换行，设置 width, height, padding, margin 属性有效。 由于 inline-block 元素会产生新的 BFC，因此可以包含浮动。</p></blockquote> <p><a href="https://www.jeffjade.com/2015/06/24/2015-06-24-css-block-inline/" target="_blank" rel="noopener noreferrer">块级元素与行内元素<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="div高度"><a href="#div高度" class="header-anchor">#</a> div高度</h3> <p>div高度由其内部文档流的高度总和决定</p> <ol><li>仅一行 内联元素</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;style&gt;
+   div{
+     border:1px solid red;
+     font-size:20px;
+   }
+&lt;/style&gt;
+&lt;div&gt;
+  1
+&lt;/div&gt;
+</code></pre></div><p>设置字体高度为20px，使用默认字体时，div高度为28.67</p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-04507bce83c34e6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p>设置<code>font-family:Arial；</code> div高度为24.67</p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-f16ebb39c4f59c25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p>设置<code>line-height:20px；font-size:60px;</code> div高度为22</p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-c7dcf3fd133a3860.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>当仅一行时，div高度由行高确定，与字体大小无关(不同字体行高不同，字体建议行高由设计师确定)</p></blockquote> <ol start="2"><li>多行</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;div&gt;
+  &lt;span&gt;1&lt;/span&gt;&lt;br&gt;
+  &lt;span&gt;2&lt;/span&gt;&lt;br&gt;
+  &lt;span&gt;3&lt;/span&gt;
+&lt;/div&gt; 
+</code></pre></div><p>使用默认字体：</p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-17d70a0ab8b1f5eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p>设置<code>font-family:Arial;</code></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-330bb793fa2de90d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>当多行时，div高度由多行行高相加</p></blockquote> <ul><li><h1 id="inline-block"><a href="#inline-block" class="header-anchor">#</a> inline-block</h1></li></ul> <blockquote><p>既呈现 inline 特性(不占据一整行，宽度由内容宽度决定)
+又呈现 block 特性 (可设置宽高，内外边距)
+缝隙问题(inline-block 之间有空格、Tab、换行符等会产生缝隙)</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;box&quot;&gt;
+  &lt;span class=&quot;inner&quot;&gt;welcome,welcome,welcome&lt;/span&gt;
+  &lt;span class=&quot;inner&quot;&gt;welcome,welcome,welcome&lt;/span&gt;
+  &lt;span class=&quot;inner&quot;&gt;welcome,welcome,welcome&lt;/span&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .box{
+    border:1px solid green;
+    text-align:center;
+  }
+  .inner{
+    display:inline-block;
+    border:1px solid red;
+    width:220px;
+    padding:10px;
+    margin-bottom:10px;
+  }
+&lt;/style&gt;
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-cc0279bde073ef73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>注：通过给span标签设置inline-block属性，发现既呈现 inline 特性、又呈现 block 特性
+不占据整行又可设置width、height、padding、margin</p></blockquote> <h4 id="消除缝隙"><a href="#消除缝隙" class="header-anchor">#</a> <em>消除缝隙</em></h4> <ol><li>两标签并排</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;box&quot;&gt;
+  &lt;span class=&quot;inner&quot;&gt;welcome,welcome,welcome&lt;/span&gt;&lt;span class=&quot;inner&quot;&gt;welcome,welcome,welcome&lt;/span&gt;
+  &lt;span class=&quot;inner&quot;&gt;welcome,welcome,welcome&lt;/span&gt;
+&lt;/div&gt;
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-dbd7532516e2420a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ol start="2"><li>使用font-size:0(父元素设置0，子元素自定义）</li></ol> <div class="language- extra-class"><pre class="language-text"><code>.box{
+  border:1px solid green;
+  text-align:center;
+  font-size:0;
+}
+.inner{
+  display:inline-block;
+  border:1px solid red;
+  width:220px;
+  padding:10px;
+  margin-bottom:10px;
+  font-size:16px;
+}
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-b691ff0bdca18761.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ol start="3"><li>使用float:left</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;style&gt;
+    .inner{
+      float:left;
+    }
+    .clearfix::after{
+      content:'';
+      display:block;
+      clear:both;
+    }
+&lt;/style&gt;
+&lt;div class=&quot;box clearfix&quot;&gt;
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-6ec070e7676d87e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="清除浮动"></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-e1383310d93c70a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="未清除浮动"></p> <blockquote><p>如果用了浮动，其父元素一般(最好)需要清除浮动。若未清除浮动，会出现浮动溢出现象</p></blockquote> <ul><li><h3 id="word-break"><a href="#word-break" class="header-anchor">#</a> word-break</h3></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;style&gt;
+  div{
+    border:1px solid red;
+    //word-break:break-all;
+  }
+&lt;/style&gt;
+&lt;div&gt;
+  aa  bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+  cc
+  dd
+&lt;/div&gt;
+</code></pre></div><p>先要明确一点，不加word-break的时候，就是浏览器默认的时候，如果有一个单词很长，导致一行中剩下的空间已经放不下它时，则浏览器会把这个单词挪到下一行去：</p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-df870218c2686436.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p>在没有单词内断句的情况，单词太长会溢出了包裹它的容器</p> <h4 id="使用break-all强制断句"><a href="#使用break-all强制断句" class="header-anchor">#</a> 使用break-all强制断句</h4> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-ae4e2d4ab2e863ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><a href="https://www.cnblogs.com/2050/archive/2012/08/10/2632256.html" target="_blank" rel="noopener noreferrer">word-break与word-wrap区别<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <ul><li><h3 id="test：实现文字两端对齐"><a href="#test：实现文字两端对齐" class="header-anchor">#</a> Test：实现文字两端对齐</h3></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;style&gt;
+  div{
+    border: 1px solid red;
+    font-size: 20px;
+  }
+    span{
+      border: 1px solid green;
+      display: inline-block;
+      width: 5em;
+      text-align: justify;
+      line-height: 20px;
+      overflow: hidden;
+      height: 20px;
+    }
+    span::after{
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border: 1px solid blue;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt;
+  &lt;span&gt;姓名&lt;/span&gt; &lt;br&gt;
+  &lt;span&gt;联系方式&lt;/span&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-1bf23379d5262690.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="效果"></p> <ul><li><h3 id="文字垂直居中"><a href="#文字垂直居中" class="header-anchor">#</a> 文字垂直居中</h3></li></ul> <blockquote><p>少用height(会将高度写死，一旦文字变动会出现bug)
+使用 line-height + padding 实现给定行高！！！！！</p></blockquote> <h5 id="实现行高为130px"><a href="#实现行高为130px" class="header-anchor">#</a> 实现行高为130px</h5> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-7a5e647bf9741c3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="line-height + padding"></p> <p>Tips: 四行每行行高为30px， 30*4 = 120 + 5*2 = 130</p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-6d9ec2b0b7865761.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="height"></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-35d8a4fe91d2f915.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="溢出"></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-a94e5c69a7737044.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="line-height + padding"></p> <blockquote><p>通过新增文字，对比发现，若高度固定，新增文字会溢出；使用padding会自适应，不会出现溢出现象</p></blockquote> <ul><li><h3 id="文字溢出"><a href="#文字溢出" class="header-anchor">#</a> 文字溢出</h3></li></ul> <h4 id="_1-单行文字溢出"><a href="#_1-单行文字溢出" class="header-anchor">#</a> 1. 单行文字溢出</h4> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-a470407b6c3f0ed0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="初始状态"></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-e1aee9e8de852a72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文字不换行"></p> <div class="language- extra-class"><pre><code> white-space:nowrap;    
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-86d12be865f2e202.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="超出部分隐藏"></p> <div class="language- extra-class"><pre><code> overflow:hidden;    
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-7657f0fac7f1f3ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="...显示"></p> <div class="language- extra-class"><pre><code>text-overflow:ellipsis;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code> //完整css代码
+  &lt;style&gt;
+  div{
+    border:1px solid red;
+    white-space:nowrap;      
+    overflow:hidden;        
+    text-overflow:ellipsis;
+  }
+  &lt;/style&gt;
+</code></pre></div><h4 id="_2-多行溢出"><a href="#_2-多行溢出" class="header-anchor">#</a> 2. 多行溢出</h4> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-111b88efcb15f2e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="google"></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-b6bc0082381b91ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-493c4749c479e9b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="效果"></p> <div class="language- extra-class"><pre class="language-text"><code> //完整代码
+ &lt;style&gt;
+    div{
+      border:1px solid red;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;  
+    
+    }
+  &lt;/style&gt;
+</code></pre></div><blockquote><p><code>-webkit-line-clamp: 3</code>可控制显示行数
+超出部分若不想显示，使用 <code>overflow:hidden</code>隐藏即可</p></blockquote> <h4 id="_3-margin合并"><a href="#_3-margin合并" class="header-anchor">#</a> 3. margin合并</h4> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;dad&quot;&gt;
+  &lt;div class=&quot;son&quot;&gt;
+    text
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+    .dad{
+      outline:1px solid red;
+
+    }
+    .son{
+      border:1px solid green;
+      padding:10px;
+      margin:10px;
+    }
+&lt;/style&gt;
+</code></pre></div><blockquote><p>设置子元素margin高度，发现margin-top、margin-bottom未生效。
+因为父元素无遮挡，造成子元素外边距margin与父元素合并。</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-bfc12ea5a12ddbff.gif?imageMogr2/auto-orient/strip" alt="son"></p> <p>解决办法：</p> <ol><li>设置border</li></ol> <div class="language- extra-class"><pre class="language-text"><code>    .dad{
+      outline:1px solid green;
+      border-top:10px solid red;
+      border-bottom:10px solid black;
+    }
+</code></pre></div><p>通过对父元素设置上下border实现对子元素的遮挡，margin正常显示</p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-bcc1d5b8f0b9c87a.gif?imageMogr2/auto-orient/strip" alt="border"></p> <ol start="2"><li>设置padding</li></ol> <div class="language- extra-class"><pre class="language-text"><code>    .dad{
+       outline:1px solid red; 
+       padding:1px;
+    }
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-79a96abb1f95e627.gif?imageMogr2/auto-orient/strip" alt="padding"></p> <ol start="3"><li>overflow:hidden</li></ol> <div class="language- extra-class"><pre class="language-text"><code>    .dad{
+      outline:1px solid red; 
+      overflow:hidden;
+    }
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-79a96abb1f95e627.gif?imageMogr2/auto-orient/strip" alt="overflow"></p> <blockquote><p>不到万不得已，尽量不用<code>overflow:hidden</code>。</p></blockquote> <ul><li><h3 id="test：实现div水平垂直居中-不定宽高）"><a href="#test：实现div水平垂直居中-不定宽高）" class="header-anchor">#</a> Test：实现div水平垂直居中(不定宽高）</h3></li></ul> <p>vh/vw
+vh: 相对于视窗的高度, 视窗被均分为100单位的vh;
+vw: 相对于视窗的宽度, 视窗被均分为100单位的vw;</p> <div class="language- extra-class"><pre class="language-text"><code>  &lt;style&gt;
+    body{
+      margin: 0;
+    }
+    .son{
+      border: 5px solid red;
+      padding:10px;
+    }
+    .dad{
+      height:100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  &lt;/style&gt;
+&lt;div class=dad&gt;
+  &lt;div class=son&gt;
+    block block block
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-215a174c4152831a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li><h3 id="test：实现一比一的-div"><a href="#test：实现一比一的-div" class="header-anchor">#</a> Test：实现一比一的 div</h3></li></ul> <div class="language- extra-class"><pre class="language-text"><code>  &lt;style&gt;
+    div{
+      padding-top:100%;
+      border:1px solid red;
+    }
+  &lt;/style&gt;
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-2b70852f023c2b95.gif?imageMogr2/auto-orient/strip" alt=""></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/learningNotes/css/note6.html" class="prev">
+        画等边三角形
+      </a></span> <span class="next"><a href="/learningNotes/js/note0.html">
+        JS基本语法
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/learningNotes/assets/js/app.fda5b0ab.js" defer></script><script src="/learningNotes/assets/js/2.8795140b.js" defer></script><script src="/learningNotes/assets/js/39.42ee6d63.js" defer></script>
+  </body>
+</html>

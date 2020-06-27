@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命令行基础 | Learning Notes</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/learningNotes/favicon.ico">
+    <meta name="description" content="Keep Learning, Keep Growing, Keep Succeeding">
+    <link rel="preload" href="/learningNotes/assets/css/0.styles.12d3ff79.css" as="style"><link rel="preload" href="/learningNotes/assets/js/app.fda5b0ab.js" as="script"><link rel="preload" href="/learningNotes/assets/js/2.8795140b.js" as="script"><link rel="preload" href="/learningNotes/assets/js/9.00cf94d6.js" as="script"><link rel="prefetch" href="/learningNotes/assets/js/10.1e310ae4.js"><link rel="prefetch" href="/learningNotes/assets/js/11.9b19a07e.js"><link rel="prefetch" href="/learningNotes/assets/js/12.c838d67b.js"><link rel="prefetch" href="/learningNotes/assets/js/13.381a0216.js"><link rel="prefetch" href="/learningNotes/assets/js/14.fba6f027.js"><link rel="prefetch" href="/learningNotes/assets/js/15.1c45a95e.js"><link rel="prefetch" href="/learningNotes/assets/js/16.1d219538.js"><link rel="prefetch" href="/learningNotes/assets/js/17.d688009c.js"><link rel="prefetch" href="/learningNotes/assets/js/18.3ba198da.js"><link rel="prefetch" href="/learningNotes/assets/js/19.76783276.js"><link rel="prefetch" href="/learningNotes/assets/js/20.4957a2e2.js"><link rel="prefetch" href="/learningNotes/assets/js/21.080dd316.js"><link rel="prefetch" href="/learningNotes/assets/js/22.c7797c05.js"><link rel="prefetch" href="/learningNotes/assets/js/23.d3fdce57.js"><link rel="prefetch" href="/learningNotes/assets/js/24.abfd7ea1.js"><link rel="prefetch" href="/learningNotes/assets/js/25.f2cf88e3.js"><link rel="prefetch" href="/learningNotes/assets/js/26.a1e5b74c.js"><link rel="prefetch" href="/learningNotes/assets/js/27.bce472b8.js"><link rel="prefetch" href="/learningNotes/assets/js/28.ba6d9401.js"><link rel="prefetch" href="/learningNotes/assets/js/29.813388af.js"><link rel="prefetch" href="/learningNotes/assets/js/3.4b6ff1e5.js"><link rel="prefetch" href="/learningNotes/assets/js/30.5b313922.js"><link rel="prefetch" href="/learningNotes/assets/js/31.b2beafa1.js"><link rel="prefetch" href="/learningNotes/assets/js/32.6bec7c08.js"><link rel="prefetch" href="/learningNotes/assets/js/33.febc993b.js"><link rel="prefetch" href="/learningNotes/assets/js/34.6511e4de.js"><link rel="prefetch" href="/learningNotes/assets/js/35.a98f3ae3.js"><link rel="prefetch" href="/learningNotes/assets/js/36.7c14d960.js"><link rel="prefetch" href="/learningNotes/assets/js/37.391e7f03.js"><link rel="prefetch" href="/learningNotes/assets/js/38.7d0833c6.js"><link rel="prefetch" href="/learningNotes/assets/js/39.42ee6d63.js"><link rel="prefetch" href="/learningNotes/assets/js/4.3517de2a.js"><link rel="prefetch" href="/learningNotes/assets/js/40.454b7b2b.js"><link rel="prefetch" href="/learningNotes/assets/js/41.1030c50f.js"><link rel="prefetch" href="/learningNotes/assets/js/42.053e784b.js"><link rel="prefetch" href="/learningNotes/assets/js/43.7b9e7ebd.js"><link rel="prefetch" href="/learningNotes/assets/js/44.a4077cfe.js"><link rel="prefetch" href="/learningNotes/assets/js/45.9871b7d5.js"><link rel="prefetch" href="/learningNotes/assets/js/46.dc8741f0.js"><link rel="prefetch" href="/learningNotes/assets/js/47.8616dc07.js"><link rel="prefetch" href="/learningNotes/assets/js/48.19609aa3.js"><link rel="prefetch" href="/learningNotes/assets/js/49.00af8837.js"><link rel="prefetch" href="/learningNotes/assets/js/5.d8e4db26.js"><link rel="prefetch" href="/learningNotes/assets/js/50.55e9f893.js"><link rel="prefetch" href="/learningNotes/assets/js/51.643f5d5b.js"><link rel="prefetch" href="/learningNotes/assets/js/52.34ae848c.js"><link rel="prefetch" href="/learningNotes/assets/js/53.3f416545.js"><link rel="prefetch" href="/learningNotes/assets/js/54.84acf50a.js"><link rel="prefetch" href="/learningNotes/assets/js/55.00c96a68.js"><link rel="prefetch" href="/learningNotes/assets/js/56.0e5940bf.js"><link rel="prefetch" href="/learningNotes/assets/js/57.a1958548.js"><link rel="prefetch" href="/learningNotes/assets/js/58.36bb823d.js"><link rel="prefetch" href="/learningNotes/assets/js/59.4954a3c8.js"><link rel="prefetch" href="/learningNotes/assets/js/6.0672d94d.js"><link rel="prefetch" href="/learningNotes/assets/js/60.14640f51.js"><link rel="prefetch" href="/learningNotes/assets/js/61.0312f266.js"><link rel="prefetch" href="/learningNotes/assets/js/62.7697078f.js"><link rel="prefetch" href="/learningNotes/assets/js/63.f897d9d2.js"><link rel="prefetch" href="/learningNotes/assets/js/64.e9fd6c82.js"><link rel="prefetch" href="/learningNotes/assets/js/65.fb786054.js"><link rel="prefetch" href="/learningNotes/assets/js/66.3989266a.js"><link rel="prefetch" href="/learningNotes/assets/js/67.67933591.js"><link rel="prefetch" href="/learningNotes/assets/js/68.f2a39cc9.js"><link rel="prefetch" href="/learningNotes/assets/js/69.9ce7e4b3.js"><link rel="prefetch" href="/learningNotes/assets/js/7.54547a7f.js"><link rel="prefetch" href="/learningNotes/assets/js/70.777a5d57.js"><link rel="prefetch" href="/learningNotes/assets/js/71.8e6e4fea.js"><link rel="prefetch" href="/learningNotes/assets/js/72.f50a2759.js"><link rel="prefetch" href="/learningNotes/assets/js/73.722e119b.js"><link rel="prefetch" href="/learningNotes/assets/js/8.469ab190.js">
+    <link rel="stylesheet" href="/learningNotes/assets/css/0.styles.12d3ff79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learningNotes/" class="home-link router-link-active"><img src="/learningNotes/images.jpg" alt="Learning Notes" class="logo"> <span class="site-name can-hide">Learning Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Home</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Browser</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/learningNotes/Browser/note.html" class="sidebar-link">HTTP请求与响应</a></li><li><a href="/learningNotes/Browser/note2.html" class="sidebar-link">Git入门</a></li><li><a href="/learningNotes/Browser/note21.html" class="sidebar-link">Git本地仓库</a></li><li><a href="/learningNotes/Browser/note22.html" class="sidebar-link">Git远程仓库</a></li><li><a href="/learningNotes/Browser/note3.html" aria-current="page" class="active sidebar-link">命令行基础</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>极简记账项目笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他项目笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="命令行基础"><a href="#命令行基础" class="header-anchor">#</a> 命令行基础</h3> <p>路径分隔符： /</p> <ul><li><p>绝对路径：从顶层开始的路径</p></li> <li><p>相对路径：从当前位置开始的路径
+.   :  当前目录
+..  :   父目录</p> <div class="language- extra-class"><pre><code>   $ pwd 
+
+   /c/Users/fanison 
+</code></pre></div><p>注：使用pwd 查看当前路径，/c/Users/fanison 即当前所在路径</p></li></ul> <h4 id="基本命令"><a href="#基本命令" class="header-anchor">#</a> 基本命令</h4> <ul><li><p>pwd: print working directory   当前工作目录</p></li> <li><p>cd: change directory
+cd  目标路径     改变目录</p> <div class="language- extra-class"><pre><code> $ cd myBlog/
+</code></pre></div><p>注：使用cd命令进入myBlog目录</p></li> <li><p>mkdir: make directory   创建目录
+-p: 先创建父目录
+-v: 显示详细信息</p> <div class="language- extra-class"><pre><code>$ mkdir a/b/c
+mkdir: cannot create directory ‘a/b/c’: No such file or directory
+$ mkdir -pv a/b/c
+mkdir: created directory 'a'
+mkdir: created directory 'a/b'
+mkdir: created directory 'a/b/c'
+</code></pre></div><p>注：使用mkdir命令在当前目录下创建/a/b/c目录，若/a/b目录不存在则无法创建，需使用-p选项</p></li> <li><p>rmdir ：删除空目录</p> <p>$ rmdir a/b</p> <p>rmdir: failed to remove 'a': Directory not empty</p> <p>注：若目录非空，则无法删除</p></li> <li><p>rm：删除文件</p> <p>rm  -f  文件路径  ：强制删除文件
+rm  -r  目录路径  ： 删除目录<br>
+rm  -rf  目录路径 ：强制删除目录</p> <div class="language- extra-class"><pre><code>  $rm -rf a
+</code></pre></div><p>注：-rf选项需谨慎使用</p></li> <li><p>cp：copy  复制</p> <p>使用方法：cp 源路径 目标路径</p> <p>cp SRC  DEST</p> <p>假如SRC是一个文件：</p> <div class="language- extra-class"><pre><code>      如果目标是一个文件且存在：覆盖
+
+          如果目标文件不存在：创建新文件
+
+      如果目标存在，且是个目录：复制源至目标目录，并保持原名
+</code></pre></div><p>cp SRC... DEST</p> <div class="language- extra-class"><pre><code>假如SRC有多个文件：
+
+         如果目标存在，且是一个文件：复制无法进行
+
+         如果目标存在，且是一个目录：复制各文件至目标目录中，并保持原名
+
+         如果目标不存在：复制无法进行
+
+  如果SRC只有一个且是目录：-r
+
+          如果目标是一个文件且存在：失败
+
+          如果目标文件不存在：创建新目录
+
+          如果目标存在，且是个目录：复制源目录至目标目录中，且保持原名
+</code></pre></div></li> <li><p>mv： 移动文件</p> <p>使用方法：mv 源路径 目标路径</p> <div class="language- extra-class"><pre><code>$ mv a c
+</code></pre></div><p>注：可以使用mv更改文件名（将目录a名称改为c）</p></li> <li><p>touch：创建文件</p></li></ul> <p>touch 文件名</p> <div class="language- extra-class"><pre><code>$ touch a.txt
+
+$ ls -l a.txt
+
+-rw-r--r-- 1 fanison 197121 0 二月  4 21:17 a.txt
+
+$ touch a.txt
+
+$ ls -l a.txt
+
+-rw-r--r-- 1 fanison 197121 0 二月  4 21:23 a.txt
+</code></pre></div><p>注：touch也可以改变文件更新时间</p> <p>*ls：查看路径</p> <div class="language- extra-class"><pre><code>ls  [选项] 路径
+
+    -a: 显示所有文件，包含隐藏文件，
+
+    -l: 长格式
+
+              l          rwxrwxrwx.    1      root  root      2 Feb 12 09:49      rvi      -&gt; vi
+
+              文件类型     文件权限   硬链接数   属主   属组      最近一次修改时间    文件名    原始文件
+
+    -d: 显示目录自身的信息, 通常与-l同时使用
+
+    -r: 逆序显示
+
+    -R: 递归显示
+
+    -h: 文件大小以易读格式显示
+
+    -i: inode号， index node
+</code></pre></div><p>ls -al  长格式显示所有文件</p> <p>补充：</p> <ul><li><p>Linux文件类型：</p> <div class="language- extra-class"><pre><code>  普通文件：-, f    
+  目录文件：d
+  链接文件(符号链接)：l        
+  设备文件
+      字符设备：c    块设备: b
+  命名管道：p  
+  套接字文件：s
+</code></pre></div></li> <li><p>Linux文件时间戳：</p> <div class="language- extra-class"><pre><code>  访问时间    修改时间    改变时间
+</code></pre></div></li> <li><p>权限管理: owner, group    属主，属组，其它</p> <p>权限：read, write, execute      r, w, x</p> <p>文件：</p> <div class="language- extra-class"><pre><code>  r: 可以使用内容查看类的命令来显示其相关内容；
+
+  w: 可以使用编辑器修改其内容；
+
+  x: 可以将其发起一个进程；
+</code></pre></div><p>目录：</p> <div class="language- extra-class"><pre><code>  r: 可以使用ls命令查看目录内容的文件信息；
+
+  w: 可以创建、删除文件；
+
+  x: 可以使用ls -l命令查看目录内容的文件信息，并且可以使用cd命令切换此目录为工作目录；
+</code></pre></div><p>用户的不拥有某位权限，则使用-占位；    r-x    r--    rw-</p></li> <li><p>cat  查看文件内容</p></li> <li><p>echo:</p> <p>echo '1' &gt;   文件路径  ：创建文件</p> <p>echo '1' &gt;!   文件路径 ：强制创建文件</p> <p>echo '1' &gt;&gt;  文件路径 ：追加文件内容</p> <div class="language- extra-class"><pre><code>$ echo 1  &gt;  a.txt
+$ cat  a.txt
+1
+$ echo b &gt;&gt; a.txt
+$ cat a.txt 
+1
+b
+</code></pre></div></li> <li><p>tree ： 查看文件树</p></li></ul> <h4 id="ps："><a href="#ps：" class="header-anchor">#</a> ps：</h4> <ul><li><p>使用命令行过程中，遇到问题可以使用https://explainshell.com来解决
+使用方法：
+<img src="https://upload-images.jianshu.io/upload_images/16155751-f3e4af8ed140ea1d.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="捕获.PNG"></p></li> <li><p>使用tldr查看命令使用方法</p> <div class="language- extra-class"><pre><code>  $  npm install -g tldr   （安装tldr）
+  $  tldr  man
+      man
+
+  Format and display manual pages.
+  - Display man page for a command:
+  man command
+  - Display man page for a command from section 7:
+  man command.7
+  - Display path searched for manpages:
+  man --path
+  - Display location of a manpage rather than the manpage itself:
+  man -w command
+  - Do a keyword search for manpages containing a search string:
+   man -k keyword
+</code></pre></div></li></ul> <h4 id="vim下次专门叙述"><a href="#vim下次专门叙述" class="header-anchor">#</a> vim下次专门叙述</h4></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/learningNotes/Browser/note22.html" class="prev">
+        Git远程仓库
+      </a></span> <span class="next"><a href="/learningNotes/money/note.html">
+        序言
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/learningNotes/assets/js/app.fda5b0ab.js" defer></script><script src="/learningNotes/assets/js/2.8795140b.js" defer></script><script src="/learningNotes/assets/js/9.00cf94d6.js" defer></script>
+  </body>
+</html>

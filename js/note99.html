@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DOM编程 | Learning Notes</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/learningNotes/favicon.ico">
+    <meta name="description" content="Keep Learning, Keep Growing, Keep Succeeding">
+    <link rel="preload" href="/learningNotes/assets/css/0.styles.12d3ff79.css" as="style"><link rel="preload" href="/learningNotes/assets/js/app.fda5b0ab.js" as="script"><link rel="preload" href="/learningNotes/assets/js/2.8795140b.js" as="script"><link rel="preload" href="/learningNotes/assets/js/62.7697078f.js" as="script"><link rel="prefetch" href="/learningNotes/assets/js/10.1e310ae4.js"><link rel="prefetch" href="/learningNotes/assets/js/11.9b19a07e.js"><link rel="prefetch" href="/learningNotes/assets/js/12.c838d67b.js"><link rel="prefetch" href="/learningNotes/assets/js/13.381a0216.js"><link rel="prefetch" href="/learningNotes/assets/js/14.fba6f027.js"><link rel="prefetch" href="/learningNotes/assets/js/15.1c45a95e.js"><link rel="prefetch" href="/learningNotes/assets/js/16.1d219538.js"><link rel="prefetch" href="/learningNotes/assets/js/17.d688009c.js"><link rel="prefetch" href="/learningNotes/assets/js/18.3ba198da.js"><link rel="prefetch" href="/learningNotes/assets/js/19.76783276.js"><link rel="prefetch" href="/learningNotes/assets/js/20.4957a2e2.js"><link rel="prefetch" href="/learningNotes/assets/js/21.080dd316.js"><link rel="prefetch" href="/learningNotes/assets/js/22.c7797c05.js"><link rel="prefetch" href="/learningNotes/assets/js/23.d3fdce57.js"><link rel="prefetch" href="/learningNotes/assets/js/24.abfd7ea1.js"><link rel="prefetch" href="/learningNotes/assets/js/25.f2cf88e3.js"><link rel="prefetch" href="/learningNotes/assets/js/26.a1e5b74c.js"><link rel="prefetch" href="/learningNotes/assets/js/27.bce472b8.js"><link rel="prefetch" href="/learningNotes/assets/js/28.ba6d9401.js"><link rel="prefetch" href="/learningNotes/assets/js/29.813388af.js"><link rel="prefetch" href="/learningNotes/assets/js/3.4b6ff1e5.js"><link rel="prefetch" href="/learningNotes/assets/js/30.5b313922.js"><link rel="prefetch" href="/learningNotes/assets/js/31.b2beafa1.js"><link rel="prefetch" href="/learningNotes/assets/js/32.6bec7c08.js"><link rel="prefetch" href="/learningNotes/assets/js/33.febc993b.js"><link rel="prefetch" href="/learningNotes/assets/js/34.6511e4de.js"><link rel="prefetch" href="/learningNotes/assets/js/35.a98f3ae3.js"><link rel="prefetch" href="/learningNotes/assets/js/36.7c14d960.js"><link rel="prefetch" href="/learningNotes/assets/js/37.391e7f03.js"><link rel="prefetch" href="/learningNotes/assets/js/38.7d0833c6.js"><link rel="prefetch" href="/learningNotes/assets/js/39.42ee6d63.js"><link rel="prefetch" href="/learningNotes/assets/js/4.3517de2a.js"><link rel="prefetch" href="/learningNotes/assets/js/40.454b7b2b.js"><link rel="prefetch" href="/learningNotes/assets/js/41.1030c50f.js"><link rel="prefetch" href="/learningNotes/assets/js/42.053e784b.js"><link rel="prefetch" href="/learningNotes/assets/js/43.7b9e7ebd.js"><link rel="prefetch" href="/learningNotes/assets/js/44.a4077cfe.js"><link rel="prefetch" href="/learningNotes/assets/js/45.9871b7d5.js"><link rel="prefetch" href="/learningNotes/assets/js/46.dc8741f0.js"><link rel="prefetch" href="/learningNotes/assets/js/47.8616dc07.js"><link rel="prefetch" href="/learningNotes/assets/js/48.19609aa3.js"><link rel="prefetch" href="/learningNotes/assets/js/49.00af8837.js"><link rel="prefetch" href="/learningNotes/assets/js/5.d8e4db26.js"><link rel="prefetch" href="/learningNotes/assets/js/50.55e9f893.js"><link rel="prefetch" href="/learningNotes/assets/js/51.643f5d5b.js"><link rel="prefetch" href="/learningNotes/assets/js/52.34ae848c.js"><link rel="prefetch" href="/learningNotes/assets/js/53.3f416545.js"><link rel="prefetch" href="/learningNotes/assets/js/54.84acf50a.js"><link rel="prefetch" href="/learningNotes/assets/js/55.00c96a68.js"><link rel="prefetch" href="/learningNotes/assets/js/56.0e5940bf.js"><link rel="prefetch" href="/learningNotes/assets/js/57.a1958548.js"><link rel="prefetch" href="/learningNotes/assets/js/58.36bb823d.js"><link rel="prefetch" href="/learningNotes/assets/js/59.4954a3c8.js"><link rel="prefetch" href="/learningNotes/assets/js/6.0672d94d.js"><link rel="prefetch" href="/learningNotes/assets/js/60.14640f51.js"><link rel="prefetch" href="/learningNotes/assets/js/61.0312f266.js"><link rel="prefetch" href="/learningNotes/assets/js/63.f897d9d2.js"><link rel="prefetch" href="/learningNotes/assets/js/64.e9fd6c82.js"><link rel="prefetch" href="/learningNotes/assets/js/65.fb786054.js"><link rel="prefetch" href="/learningNotes/assets/js/66.3989266a.js"><link rel="prefetch" href="/learningNotes/assets/js/67.67933591.js"><link rel="prefetch" href="/learningNotes/assets/js/68.f2a39cc9.js"><link rel="prefetch" href="/learningNotes/assets/js/69.9ce7e4b3.js"><link rel="prefetch" href="/learningNotes/assets/js/7.54547a7f.js"><link rel="prefetch" href="/learningNotes/assets/js/70.777a5d57.js"><link rel="prefetch" href="/learningNotes/assets/js/71.8e6e4fea.js"><link rel="prefetch" href="/learningNotes/assets/js/72.f50a2759.js"><link rel="prefetch" href="/learningNotes/assets/js/73.722e119b.js"><link rel="prefetch" href="/learningNotes/assets/js/8.469ab190.js"><link rel="prefetch" href="/learningNotes/assets/js/9.00cf94d6.js">
+    <link rel="stylesheet" href="/learningNotes/assets/css/0.styles.12d3ff79.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/learningNotes/" class="home-link router-link-active"><img src="/learningNotes/images.jpg" alt="Learning Notes" class="logo"> <span class="site-name can-hide">Learning Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learningNotes/" class="nav-link">
+  🏠Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧐Front-End" class="dropdown-title"><span class="title">🧐Front-End</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learningNotes/html/note.html" class="nav-link">
+  💻HTML
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/css/note0.html" class="nav-link">
+  🥩CSS
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/js/note0.html" class="nav-link">
+  🧿JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Vue/note1.html" class="nav-link">
+  📯Vue
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/jQuery/note0.html" class="nav-link">
+  🎯jQuery
+</a></li><li class="dropdown-item"><!----> <a href="/learningNotes/Browser/note.html" class="nav-link">
+   🖥Browser
+</a></li></ul></div></div><div class="nav-item"><a href="/learningNotes/money/note.html" class="nav-link">
+  💰极简记账
+</a></div><div class="nav-item"><a href="/learningNotes/Other/note0.html" class="nav-link">
+  🧸Other
+</a></div><div class="nav-item"><a href="https://github.com/yafanisonya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ⌛Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Home</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/learningNotes/js/note0.html" class="sidebar-link">JS基本语法</a></li><li><a href="/learningNotes/js/note1.html" class="sidebar-link">JS数据类型</a></li><li><a href="/learningNotes/js/note2.html" class="sidebar-link">JS对象基本语法</a></li><li><a href="/learningNotes/js/note3.html" class="sidebar-link">JS原型、原型链</a></li><li><a href="/learningNotes/js/note4.html" class="sidebar-link">JS数组</a></li><li><a href="/learningNotes/js/note5.html" class="sidebar-link">JS函数</a></li><li><a href="/learningNotes/js/note6.html" class="sidebar-link">JS运算符</a></li><li><a href="/learningNotes/js/note7.html" class="sidebar-link">JS中if(xx)和 a==b 小结</a></li><li><a href="/learningNotes/js/note8.html" class="sidebar-link">JS实现字符串和数组的相互转化</a></li><li><a href="/learningNotes/js/note9.html" class="sidebar-link">DOM事件传播机制</a></li><li><a href="/learningNotes/js/note99.html" aria-current="page" class="active sidebar-link">DOM编程</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/learningNotes/js/note10.html" class="sidebar-link">跨域</a></li><li><a href="/learningNotes/js/note11.html" class="sidebar-link">闭包练习</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Browser</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>极简记账项目笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他项目笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="dom编程"><a href="#dom编程" class="header-anchor">#</a> DOM编程</h3> <h4 id="获取元素"><a href="#获取元素" class="header-anchor">#</a> 获取元素</h4> <div class="language- extra-class"><pre class="language-text"><code>window.idxxx  // idxxxx
+document.getElementById('idxxx')
+document.getElementsByTagName('div')[0]
+document.getElementsByClassName('red')[0]
+
+document.querySelector('#idxxx')
+document.querySelectorAll('.red')[0]
+
+document.documentElement  // 获取html元素
+document.head // 获取head元素
+document.body // 获取body元素
+window  // 获取窗口
+document.all // 获取所有元素   （第六个falsy值）
+</code></pre></div><h4 id="元素的6层原型链"><a href="#元素的6层原型链" class="header-anchor">#</a> 元素的6层原型链</h4> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-1aa9020d3eb5d9c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <blockquote><p>第一层原型: <code>HTMLDivElement.prototype</code>
+第二层原型: <code>HTMLElement.prototype</code>
+第三层原型: <code>Element.prototype</code>
+第四层原型: <code>Node.prototype</code>
+第五层原型: <code>EventTarget.prototype</code>
+第六层原型: <code>Object.prototype</code></p></blockquote> <h4 id="增删改查"><a href="#增删改查" class="header-anchor">#</a> 增删改查</h4> <ul><li>增</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 创建一个标签节点
+let div1 = document.createElement('div')
+document.createElement('style')
+document.createElement('script')
+document.createElement('li')
+// 创建一个文本节点
+text1 = document.createTextNode('你好')
+// 标签里面插入文本
+div1.appendChild(text1)
+div1.innerText = 'hello'
+div1.textContent = 'hi'
+// 标签插入到页面，必须插入到head或body中才会生效
+document.body.appendChild(div)
+已在页面中的元素.appendChild(div)
+</code></pre></div><blockquote><p>Test:页面中有<code>div#test1</code>和<code>div#test2</code>,div最终出现在何处？
+答案: test2里面，因为一个元素不能出现在两个地方，除非复制一份</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let div = document.createElement('div')
+test1.appendChild(div)
+test2.appendChild(div)
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-209485ccd3094dc2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>删</li></ul> <div class="language- extra-class"><pre class="language-text"><code>parentNode.removeChild(childNode)
+childNode.remove()
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-ebe7fc20b7f94d53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>改</li></ul> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-b8388b6eccacffb6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-d521dc903b0b2e6f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;test&quot;&gt;fafa&lt;/div&gt;
+
+console.log(test.onclick)
+test.onclick= function(x){
+  console.log(this)
+  console.log(x)
+}
+</code></pre></div><blockquote><p><code>div.onclick</code>默认为<code>null</code>,默认点击<code>div</code>不会有任何事情发生，但是把<code>div.onclick</code>改为一个函数<code>fn</code>。那么点击<code>div</code>时浏览器就会调用函数fn <code>fn.call(div,event)</code>  div被当做this，event则包含了点击事件的所有信息</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-0d48bcf8689392b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <div class="language- extra-class"><pre class="language-text"><code>// 改文本内容
+div.innerText = 'xxx'
+div.textContent = 'xxx'
+// 改HTML内容
+div.innerHTML = ‘&lt;strong&gt;aa&lt;/strong&gt;’
+// 改标签
+div.innerHTML = ‘’      // 先清空
+div.appendChild(div2)   // 再加内容
+</code></pre></div><ul><li>查</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 查看父元素
+node.parentNode   
+node.parentElement
+// 查看子元素
+node.children
+node.childNodes    // 包括文本节点
+// 查看子代
+node.childNodes
+node.children
+// 查看第一个子元素
+node.firstChild
+node.firstElementChild
+// 查看最后一个子元素
+node.lastChild
+node.lastElementChild
+// 查看上一个元素
+node.previousSibing
+node.previousElementSibling
+// 查看下一个元素
+node.nextSibing
+node.nextElementSibling
+// 查看同一父元素的元素
+node.parentElement.children
+node.parentNode.childNodes
+// 遍历div里面所有元素
+travel = (node,fn) =&gt;{
+  fn(node)
+  if(node.children){
+    for(let i=0;i&lt;node.children.length;i++){
+      travel(node.children[i],fn)
+    }
+  }
+}
+travel(div1,(node)=&gt;console.log(node))
+</code></pre></div><p><img src="https://upload-images.jianshu.io/upload_images/16155751-d3a46c5bcdd13875.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-d10215ef70f1fc31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-e19d208240e93268.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <h4 id="dom操作跨线程"><a href="#dom操作跨线程" class="header-anchor">#</a> DOM操作跨线程</h4> <ul><li>跨线程操作
+JS引擎不能操作页面，只能操作JS
+渲染引擎不能操作JS，只能操作页面</li></ul> <blockquote><p><code>document.body.appendChild(div1)</code> 是如何改变页面的?
+当浏览器发现JS在body里面加个个div1对象，浏览器就会通知渲染引擎在页面里面也新增一个div元素，新增的div元素所有属性都照抄div1对象</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-d3f207104792624c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <ul><li>属性同步</li></ul> <blockquote><p>标准属性：对标准属性的修改，会被浏览器同步到页面中
+data-*属性：同上
+非标准属性：对非标准属性的修改，只会停留在JS线程中，不会同步到页面</p></blockquote> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-acbca17c595d344d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p> <p><img src="https://upload-images.jianshu.io/upload_images/16155751-3c300e1342f258fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/learningNotes/js/note9.html" class="prev">
+        DOM事件传播机制
+      </a></span> <span class="next"><a href="/learningNotes/js/note10.html">
+        跨域
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/learningNotes/assets/js/app.fda5b0ab.js" defer></script><script src="/learningNotes/assets/js/2.8795140b.js" defer></script><script src="/learningNotes/assets/js/62.7697078f.js" defer></script>
+  </body>
+</html>
